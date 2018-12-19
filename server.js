@@ -1,22 +1,92 @@
 /*jshint esversion: 6 */
-
+const async = require("async");
 const http = require("http");
 const https = require("https");
 const cheerio = require('cheerio');
 
-let linksAccesed = [];
+let list = [];
 
 let batchCounter = 0;
 
+let latestTimestamp;
 
 console.log("Stream starting");
 
-// setInterval(getChanges, 5000);
-getChanges();
 
-function getChanges() {
-    batchCounter++;
-    console.log("Batch: " + batchCounter);
+
+setTimeout(function () {
+    // console.log(list.length);
+    // console.log(list);
+    process.exit();
+}, 12000);
+
+// This gets the list and maintains it every 3 seconds
+setInterval(() => {
+
+
+    getChanges((x) => {
+        // console.log(x);
+
+
+        if (list.length == 0) {
+            list = x;
+
+            async.eachOf(list, (target, key) => {
+
+                // console.log(target + " -- " + key);
+
+                getDeletion(target[0], function (output, url) {
+
+                    console.log(output);
+                    console.log("  -  ");
+
+                });
+
+
+
+            }, (err) => {
+
+                console.log(err);
+
+            });
+
+            // getDeletion(x[0], function (output) {
+
+            //     console.log(output);
+
+            // });
+
+        } else {
+
+            // latestTimestamp = list[0][1];
+
+            // // console.log(latestTimestamp);
+
+            // for (let i = x.length; i > 0; i--) {
+
+            //     if (latestTimestamp < x[i - 1][1]) {
+            //         // console.log(x[i - 1][1]);
+            //         list.unshift(x[i]);
+
+            //     }
+
+            // }
+
+
+        }
+
+        // console.log(list);
+
+
+
+    });
+}, 3000);
+
+
+
+function getChanges(callback) {
+    // batchCounter++;
+    console.log("Batch: " + batchCounter++);
 
     let req = https.get("https://en.wikipedia.org/wiki/Special:RecentChanges?goodfaith=likelygood&hidecategorization=1&hideWikibase=1&limit=500&days=0.04166&urlversion=2",
         (res) => {
@@ -31,192 +101,169 @@ function getChanges() {
 
             res.on('end', () => {
 
-                processList(page);
+                processList(page, callback);
 
             });
 
-        })
-
-    function processList(page) {
-
-        return new Promise((resolve, reject) => {
-            const $ = cheerio.load(page);
-
-    
-
-            let list = $(".special").children();
-
-            for(let x in list){
-
-                let tStamp = list[x].attribs["data-mw-ts"];
-                let tempHref = list[x].children[1].children[1].attribs["href"];
-                console.log(tempHref + " " + tStamp);
-                
-            }
-            
-            
-
-
-            // for (x in pos) {
-            //     if (x > 0) {
-
-            //         let temp = pos[x].parent.children.filter((x) => { return !(x.attribs == null) });
-            //         let tempTitle = temp[0].attribs.title;
-            //         let tempHref = temp[0].attribs.href;
-
-            //         changes["pos"][tempTitle] = tempHref;
-
-            //     }
-
-
-            // }
-
-            // for (x in neg) {
-            //     if (!(neg[x].parent == undefined || neg[x].parent.children == undefined)) {
-            //         let temp = neg[x].parent.children.filter((x) => { return !(x.attribs == null) });
-            //         let tempTitle = temp[0].attribs.title;
-            //         let tempHref = temp[0].attribs.href;
-
-            //         changes["neg"][tempTitle] = tempHref;
-            //     }
-            // }
-
-
-
-            resolve(changes);
+        });
 
 
 
 
-        })
+
+
+}
+
+function processList(page, callback) {
+
+
+    const $ = cheerio.load(page);
+
+    let output = [];
+    let list = $(".special").children();
+    let count = 0;
+
+    for (let x = 0; x < list.length; x++) {
+
+        let tStamp = list[x].attribs["data-mw-ts"];
+        let tempHref = list[x].children[1].children[1].attribs.href;
+        // console.log(tempHref + " " + tStamp + " " + count++);
+
+        output.push([tempHref, parseInt(tStamp), true]);
+
+
+
     }
+    callback(output);
+}
 
-   
-
-    function getKnowledgeLost(page) {
+//This replaces the link names with deletions, and flips bool.
 
 
-        const $ = cheerio.load(page);
+// setInterval(() => {
+//     console.log("delGetter");
+//     console.log(list.length);
+//     // for (let i = list.length - 1; i >= 0; i--) {
+//     //     // console.log(list[i][2]);
+//     //     if (list[i][2]) {
+//     //         url = list[i][0];
 
-        let tds = $("td.diff-deletedline");
-        // let name = $("#firstHeading").data;
-        let name = $("#firstHeading")[0].firstChild.data.split(":")[0];
-        let dels = {};
+//     //         getDeletion(url, (x) => {
 
-        dels[name] = [];
+//     //             console.log("getDeletion>callback")
 
-        for (let x = 0; x < tds.length; x++) {
-            //console.log(x);
-            if (tds[x].firstChild != null && tds[x].firstChild.children.length > 1) {
-                cellCont = tds[x].firstChild.children;
+//     //         });
+//     //     }
+//     // }
 
-                for (y in cellCont) {
-                    if (cellCont[y].type == "tag" && cellCont[y].name == "del") {
 
-                        //console.log("INLINE: " + cellCont[y].firstChild.data);
 
-                        // dels += "\t..." + cellCont[y].firstChild.data + "...";
 
-                        dels[name].push(cellCont[y].firstChild.data);
+// }, 10000);
 
-                    }
-                }
-            } else if (tds[x].firstChild != null && tds[x].firstChild.children.length == 1) {
 
-                //console.log("WHOLE: " + tds[x].firstChild.firstChild.data);
+function getDeletion(url, callback) {
 
-                // dels += "\n" + tds[x].firstChild.firstChild.data;
-                dels[name].push(tds[x].firstChild.firstChild.data);
+    // console.log("https://en.wikipedia.org" + url);
 
-            } else {
-
-                //console.log("NULL")
-
-                // dels += "\n_______________\n";
-                dels[name].push("___");
-
+    let req = https.get("https://en.wikipedia.org" + url,
+        (res) => {
+            // console.log('statusCode:', res.statusCode);
+            if (res.statusCode != 200) {
+                callback(null);
             }
+            //console.log('headers:', res.headers);
+            let data = "";
+            res.on('data', (d) => {
+                //console.log(d.toString());
+                data += d.toString();
 
-        }
-
-        //console.log(dels);
-        dels = JSON.stringify(dels);
-
-        const options = {
-            hostname: 'localhost',
-            port: 3666,
-            path: '',
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Content-Length': Buffer.byteLength(dels)
-            }
-        };
-
-        const req = http.request(options, (res) => {
+            });
 
             res.on('end', () => {
+                //this is where cheerio happens
+                const del = cheerio.load(data);
 
+                tempDelLine = del(".diff-deletedline");
 
-            })
+                // console.log(tempDelLine);
 
-            res.on('error', (e) => {
-                console.log(e.name);
-            })
-        })
-        req.write(new Buffer(dels));
-        req.end;
+                console.log(tempDelLine.length);
 
-    }
+                if (tempDelLine.length == 0) {
+                    callback(null, url);
+                } else {
+                    //check for companion addition
 
-    function processNegList(list) {
-        return new Promise((resolve, reject) => {
-            for (x in list) {
-                let beenThere = false;
+                    let output = "";
+                    for (let i = 0; i < tempDelLine.length; i++) {
 
-                for (let y = 0; y < linksAccesed.length; y++) {
+                        if (!checkForAdd(tempDelLine[i]) && checkForMove(tempDelLine[i])) {
+                            if(tempDelLine[i].firstChild != null){
+                            output += tempDelLine[i].firstChild.firstChild.data;
+                            } else {
+                                output += " ";
+                            }
 
-                    if (list[x] == linksAccesed[y]) {
-                        //console.log("data seen already: redundant");
-                        beenThere = true;
+                        } else {
+
+                            let temp = tempDelLine[i].firstChild.children.filter((x) => { return x.type == "tag" && x.name == "del"; });
+                            for(let x in temp){
+                                output += temp[x].children[0].data;
+                            }
+                        }
+
                     }
 
+                    callback(output);
+
                 }
 
-                if (beenThere) {
 
-                    resolve(null)
-                } else {
 
-                    linksAccesed.push(list[x]);
+                // console.log($);
 
-                    
-                        let req = https.get("https://en.wikipedia.org" + list[x], (res) => {
-                            //console.log('statusCode:' + res.statusCode + " " + x);
+                // callback(tempDelLine, url);
 
-                            let page = "";
-                            res.on('data', (d) => {
+            });
 
-                                page += d.toString();
+        });
 
-                            })
 
-                            res.on('end', () => {
-                                console.log(res.req._header);
-                                resolve(getKnowledgeLost(page));
 
-                            })
+}
 
-                            res.on('error', (e) => {
-                                reject(e);
-                            })
+function checkForAdd(node) {
 
-                        })
-                    
-                    //console.log("listing!");
-                }
-            }
-        })
+    tempRow = node.parent.children;
 
+    tempAdded = tempRow.filter((x) => {
+        if (x.type == "tag") {
+            return x.attribs.class == "diff-addedline";
+        } else {
+            return false;
+        }
+    });
+
+    if (tempAdded.length == 1) {
+        return true;
+    } else {
+        return false;
     }
+
+}
+
+function checkForMove(node){
+    
+    temp = node.previousElementSibling;
+    if(temp == null){ return true} else {
+        temp = temp.firstChild.className;
+    if(temp == "mw-diff-movedpara-left"){
+
+        return false;
+
+    } else {
+        return true;
+    }
+}
 }
