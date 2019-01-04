@@ -4,6 +4,15 @@ const http = require("http");
 const https = require("https");
 const cheerio = require('cheerio');
 
+const path = require('path');
+
+try {
+    const Max = require('max-api');
+} catch (error) {
+    console.log(error);
+}
+
+
 let list = [];
 
 let batchCounter = 0;
