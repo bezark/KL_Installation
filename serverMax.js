@@ -22,7 +22,7 @@ let counter = null;
 console.log("Stream starting");
 
 
-
+let nextSecondKickedOff = false;
 
 
 // This gets the list and maintains it every 3 seconds
@@ -107,7 +107,7 @@ Max.addHandler("fetch", () => {
             counter = dateConvert(x[x.length - 1][1]);
 
         }
-        // console.log(counter)
+        Max.post( x.length +" in stack");
         async.eachOf(x, (target, key, callbutt) => {
 
             // console.log(target + " -- " + key);
@@ -149,11 +149,15 @@ Max.addHandler("fetch", () => {
             // console.log("end sort");
 
             Max.outlet("refetch");
+		
 
         });
 
 
-
+			if(!nextSecondKickedOff){
+				Max.outlet("nsko", 1);
+				nextSecondKickedOff = true;
+				}
 
 
     });
