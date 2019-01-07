@@ -59,9 +59,9 @@ Max.addHandler("nextSecond", () => {
 
         counter.add(1, 's');
 
-        // Max.post(counter.format());
-
-        Max.outlet(maxOutput);
+        Max.post(maxOutput);
+		if(maxOutput.length){
+        Max.outlet(maxOutput);};
 
     } else {
 

@@ -44,7 +44,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 166.0, 408.0, 66.0, 22.0 ],
+					"patching_rect" : [ 166.0, 500.0, 66.0, 22.0 ],
 					"text" : "s deletions"
 				}
 
