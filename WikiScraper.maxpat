@@ -40,6 +40,17 @@
 		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 281.0, 518.0, 32.0, 22.0 ],
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -245,14 +256,14 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 80.0, 276.0, 211.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"autostart" : 1,
+						"autostart" : 0,
 						"defer" : 0,
 						"node" : "",
 						"npm" : "",
 						"watch" : 0
 					}
 ,
-					"text" : "node.script serverMax.js @autostart 1"
+					"text" : "node.script serverMax.js @autostart 0"
 				}
 
 			}
@@ -319,6 +330,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
+					"order" : 1,
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 0,
 					"source" : [ "obj-18", 0 ]
 				}
 
