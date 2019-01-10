@@ -43,7 +43,7 @@ Max.addHandler("nextSecond", () => {
                 return counter.isSame(dateConvert(elem[1]));
             });
 
-<<<<<<< HEAD
+
 
         //culls duplicate list;
         if(doubleChecklist.length > 1500){
@@ -61,11 +61,9 @@ Max.addHandler("nextSecond", () => {
         }
 
 
-=======
+
         
-=======
-        
->>>>>>> parent of 5381ec0... Merge pull request #1 from bezark/server-improvements
+
         // Max.post(listOutput.length);
         listOutput = listOutput.filter(elem => counter.isBefore(dateConvert(elem[1])));
         Max.post(listOutput.length);
@@ -356,11 +354,6 @@ function checkForAdd(node) {
 
 function checkForMove(node) {
 
-=======
-
-function checkForMove(node) {
-
->>>>>>> parent of 5381ec0... Merge pull request #1 from bezark/server-improvements
     temp = node.previousElementSibling;
     if (temp == null) {
         return true;
