@@ -6,7 +6,11 @@ const cheerio = require('cheerio');
 
 const path = require('path');
 
-
+try {
+    const Max = require('max-api');
+} catch (error) {
+    console.log(error);
+}
 
 
 let list = [];
@@ -19,11 +23,11 @@ console.log("Stream starting");
 
 
 
-// setTimeout(function () {
-//     // console.log(list.length);
-//     // console.log(list);
-//     process.exit();
-// }, 12000);
+setTimeout(function () {
+    // console.log(list.length);
+    // console.log(list);
+    process.exit();
+}, 12000);
 
 // This gets the list and maintains it every 3 seconds
 setInterval(() => {
@@ -261,7 +265,7 @@ function checkForAdd(node) {
 function checkForMove(node){
     
     temp = node.previousElementSibling;
-    if(temp == null){ return true;} else {
+    if(temp == null){ return true} else {
         temp = temp.firstChild.className;
     if(temp == "mw-diff-movedpara-left"){
 

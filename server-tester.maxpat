@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 835.0, 787.0 ],
+		"rect" : [ 34.0, 79.0, 1852.0, 967.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,17 +38,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 176.0, 593.0, 32.0, 22.0 ],
-					"text" : "print"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-53",
 					"maxclass" : "newobj",
@@ -287,9 +276,9 @@
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 337.0, 615.0, 165.0, 22.0 ],
 					"text" : "j.oscroute /newPoem /piState"
 				}
@@ -452,7 +441,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 403.0, 309.0, 400.0, 220.0 ],
+					"patching_rect" : [ 596.0, 309.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -569,7 +558,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-20", 1 ],
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -749,7 +738,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "serverMax.js",
-				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -771,6 +760,10 @@
 				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
 				"type" : "TEXT",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "j.oscroute.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
