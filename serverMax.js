@@ -62,7 +62,9 @@ Max.addHandler("nextSecond", () => {
 
         // Max.post(listOutput.length);
         listOutput = listOutput.filter(elem => counter.isBefore(dateConvert(elem[1])));
+
         Max.post("listOutput.length " + listOutput.length);
+
 
         // Max.post(maxOutput)
         maxOutput = maxOutput.map(x => x[0]);
@@ -75,10 +77,12 @@ Max.addHandler("nextSecond", () => {
 
         counter.add(1, 's');
 
+
         // Max.post(maxOutput);
         if (maxOutput.length) {
             Max.outlet(maxOutput);
         }
+
 
     } else {
 
