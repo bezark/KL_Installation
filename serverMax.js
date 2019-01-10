@@ -50,7 +50,7 @@ Max.addHandler("nextSecond", () => {
             let tempDubArr = [];
 
             for(let i = 0; i < 1000; i++){
-                tempDubArr.push = doubleChecklist[i]; 
+                tempDubArr.push(doubleChecklist[i]); 
             }
 
             doubleChecklist = tempDubArr;
