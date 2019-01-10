@@ -60,7 +60,7 @@ Max.addHandler("nextSecond", () => {
 
         counter.add(1, 's');
 
-        Max.post(maxOutput);
+       // Max.post(maxOutput);
 		if(maxOutput.length){
         Max.outlet(maxOutput);};
 
