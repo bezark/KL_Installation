@@ -9,7 +9,7 @@ moment().format();
 const path = require('path');
 
 
-const Max = require('max-api');
+// const Max = require('max-api');
 
 
 
@@ -27,69 +27,69 @@ let nextSecondKickedOff = false;
 
 // This gets the list and maintains it every 3 seconds
 
-Max.addHandler("nextSecond", () => {
+// Max.addHandler("nextSecond", () => {
+setInterval(() => {
+//check that counter isn't null
 
-    //check that counter isn't null
-
-    if (counter != null) {
-
-
-
-        //delete old
-
-        let maxOutput = listOutput.filter(
-            (elem) => {
-                // console.log(counter + " " + dateConvert(elem[1])); 
-                return counter.isSame(dateConvert(elem[1]));
-            });
+if (counter != null) {
 
 
-        //culls duplicate list;
-        if(doubleChecklist.length > 1500){
 
-            let tempDubArr = [];
+    //delete old
 
-            for(let i = 0; i < 1000; i++){
-                tempDubArr.push = doubleChecklist[i]; 
-            }
+    let maxOutput = listOutput.filter(
+        (elem) => {
+            // console.log(counter + " " + dateConvert(elem[1])); 
+            return counter.isSame(dateConvert(elem[1]));
+        });
 
-            doubleChecklist = tempDubArr;
 
-            Max.post("Just trimmed doubleChecklist " + doubleChecklist.length);
+    //culls duplicate list;
+    if (doubleChecklist.length > 1500) {
 
+        let tempDubArr = [];
+
+        for (let i = 0; i < 1000; i++) {
+            tempDubArr.push = doubleChecklist[i];
         }
 
+        doubleChecklist = tempDubArr;
 
-        // Max.post(listOutput.length);
-        listOutput = listOutput.filter(elem => counter.isBefore(dateConvert(elem[1])));
-
-        Max.post("listOutput.length " + listOutput.length);
-
-
-        // Max.post(maxOutput)
-        maxOutput = maxOutput.map(x => x[0]);
-        // Max.post(maxOutput);
-
-        // maxOutput = removeDuplicates(maxOutput);
-
-
-        // Max.post(maxOutput);
-
-        counter.add(1, 's');
-
-
-        // Max.post(maxOutput);
-        if (maxOutput.length) {
-            Max.outlet(maxOutput);
-        }
-
-
-    } else {
-
-        Max.post("counter is null");
+        console.log("Just trimmed doubleChecklist " + doubleChecklist.length);
 
     }
-});
+
+
+    // console.log(listOutput.length);
+    listOutput = listOutput.filter(elem => counter.isBefore(dateConvert(elem[1])));
+
+    console.log("listOutput.length " + listOutput.length);
+
+
+    // console.log(maxOutput)
+    maxOutput = maxOutput.map(x => x[0]);
+    // console.log(maxOutput);
+
+    // maxOutput = removeDuplicates(maxOutput);
+
+
+    // console.log(maxOutput);
+
+    counter.add(1, 's');
+
+
+    console.log(maxOutput);
+    if (maxOutput.length) {
+        // Max.outlet(maxOutput);
+    }
+
+
+} else {
+
+    console.log("counter is null");
+
+}
+}, 1000);
 
 function removeDuplicates(arr) {
     let unique_array = [];
@@ -117,7 +117,9 @@ function dateConvert(string) {
 
 let doubleChecklist = [];
 
-Max.addHandler("fetch", () => {
+// Max.addHandler("fetch", () => {
+
+setInterval(() => {
     getChanges((x) => {
         // console.log(x);
 
@@ -128,7 +130,7 @@ Max.addHandler("fetch", () => {
             counter = dateConvert(x[x.length - 1][1]);
 
         }
-        Max.post(x.length + " in stack");
+        console.log(x.length + " in stack");
         async.eachOf(x, (target, key, callbutt) => {
 
             // console.log(target + " -- " + key);
@@ -171,21 +173,21 @@ Max.addHandler("fetch", () => {
 
             // console.log("end sort");
 
-            Max.outlet("refetch");
+            // Max.outlet("refetch");
 
 
         });
 
 
         if (!nextSecondKickedOff) {
-            Max.outlet("nsko", 1);
+            // Max.outlet("nsko", 1);
             nextSecondKickedOff = true;
         }
 
 
     });
 
-});
+}, 5000);
 
 
 
@@ -205,7 +207,7 @@ function getChanges(callback) {
             });
 
             res.on('end', () => {
-
+                
                 processList(page, callback);
 
             });
@@ -228,155 +230,155 @@ function processList(page, callback) {
     let list = $(".special").children();
     let count = 0;
 
-    Max.post("doubleChecklist.length " + doubleChecklist.length);
+    console.log("doubleChecklist.length " + doubleChecklist.length);
 
     for (let x = 0; x < list.length; x++) {
 
         let tStamp = list[x].attribs["data-mw-ts"];
-        let tempHref = list[x].children[1].children[1].attribs.href;
+        let tempHref = list[0].children[1].childNodes[0].children[0].children[0].attribs.href;
         // console.log(tempHref + " " + tStamp + " " + count++);
 
         let tempdubs = doubleChecklist.filter(listItem => {
-                return listItem[0] == tempHref;
-            });
+            return listItem[0] == tempHref;
+        });
 
-            if(tempdubs.length == 0) {
+        if (tempdubs.length == 0) {
 
-                output.push([tempHref, parseInt(tStamp), true]);
+            output.push([tempHref, parseInt(tStamp), true]);
 
-            } else {
-                
-            }
+        } else {
 
         }
-        callback(output);
+
     }
+    callback(output);
+}
 
-    //This replaces the link names with deletions, and flips bool.
-
-
-    // setInterval(() => {
-    //     console.log("delGetter");
-    //     console.log(list.length);
-    //     // for (let i = list.length - 1; i >= 0; i--) {
-    //     //     // console.log(list[i][2]);
-    //     //     if (list[i][2]) {
-    //     //         url = list[i][0];
-
-    //     //         getDeletion(url, (x) => {
-
-    //     //             console.log("getDeletion>callback")
-
-    //     //         });
-    //     //     }
-    //     // }
+//This replaces the link names with deletions, and flips bool.
 
 
+// setInterval(() => {
+//     console.log("delGetter");
+//     console.log(list.length);
+//     // for (let i = list.length - 1; i >= 0; i--) {
+//     //     // console.log(list[i][2]);
+//     //     if (list[i][2]) {
+//     //         url = list[i][0];
+
+//     //         getDeletion(url, (x) => {
+
+//     //             console.log("getDeletion>callback")
+
+//     //         });
+//     //     }
+//     // }
 
 
-    // }, 10000);
 
 
-    function getDeletion(url, callback) {
+// }, 10000);
 
-        // console.log("https://en.wikipedia.org" + url);
 
-        let req = https.get("https://en.wikipedia.org" + url,
-            (res) => {
-                // console.log('statusCode:', res.statusCode);
-                // if (res.statusCode != 200) {
-                //     callback(null);
-                // }
-                //console.log('headers:', res.headers);
-                let data = "";
-                res.on('data', (d) => {
-                    //console.log(d.toString());
-                    data += d.toString();
+function getDeletion(url, callback) {
 
-                });
+    // console.log("https://en.wikipedia.org" + url);
 
-                res.on('end', () => {
-                    //this is where cheerio happens
-                    const del = cheerio.load(data);
+    let req = https.get("https://en.wikipedia.org" + url,
+        (res) => {
+            // console.log('statusCode:', res.statusCode);
+            // if (res.statusCode != 200) {
+            //     callback(null);
+            // }
+            //console.log('headers:', res.headers);
+            let data = "";
+            res.on('data', (d) => {
+                //console.log(d.toString());
+                data += d.toString();
 
-                    tempDelLine = del(".diff-deletedline");
+            });
 
-                    // console.log(tempDelLine);
+            res.on('end', () => {
+                //this is where cheerio happens
+                const del = cheerio.load(data);
 
-                    // console.log(tempDelLine.length);
+                tempDelLine = del(".diff-deletedline");
 
-                    if (tempDelLine.length == 0) {
-                        callback(null, url);
-                    } else {
-                        //check for companion addition
+                // console.log(tempDelLine);
 
-                        let output = "";
-                        for (let i = 0; i < tempDelLine.length; i++) {
+                // console.log(tempDelLine.length);
 
-                            if (!checkForAdd(tempDelLine[i]) && checkForMove(tempDelLine[i])) {
-                                if (tempDelLine[i].firstChild != null) {
-                                    output += tempDelLine[i].firstChild.firstChild.data;
-                                } else {
-                                    output += " ";
-                                }
+                if (tempDelLine.length == 0) {
+                    callback(null, url);
+                } else {
+                    //check for companion addition
 
+                    let output = "";
+                    for (let i = 0; i < tempDelLine.length; i++) {
+
+                        if (!checkForAdd(tempDelLine[i]) && checkForMove(tempDelLine[i])) {
+                            if (tempDelLine[i].firstChild != null) {
+                                output += tempDelLine[i].firstChild.firstChild.data;
                             } else {
-
-                                let temp = tempDelLine[i].firstChild.children.filter((x) => {
-                                    return x.type == "tag" && x.name == "del";
-                                });
-                                for (let x in temp) {
-                                    output += temp[x].children[0].data;
-                                }
+                                output += " ";
                             }
 
-                        }
+                        } else {
 
-                        callback(output);
+                            let temp = tempDelLine[i].firstChild.children.filter((x) => {
+                                return x.type == "tag" && x.name == "del";
+                            });
+                            for (let x in temp) {
+                                output += temp[x].children[0].data;
+                            }
+                        }
 
                     }
 
-                });
+                    callback(output);
+
+                }
 
             });
 
-
-
-    }
-
-    function checkForAdd(node) {
-
-        tempRow = node.parent.children;
-
-        tempAdded = tempRow.filter((x) => {
-            if (x.type == "tag") {
-                return x.attribs.class == "diff-addedline";
-            } else {
-                return false;
-            }
         });
 
-        if (tempAdded.length == 1) {
-            return true;
+
+
+}
+
+function checkForAdd(node) {
+
+    tempRow = node.parent.children;
+
+    tempAdded = tempRow.filter((x) => {
+        if (x.type == "tag") {
+            return x.attribs.class == "diff-addedline";
         } else {
             return false;
         }
+    });
 
+    if (tempAdded.length == 1) {
+        return true;
+    } else {
+        return false;
     }
 
-    function checkForMove(node) {
+}
 
-        temp = node.previousElementSibling;
-        if (temp == null) {
-            return true;
+function checkForMove(node) {
+
+    temp = node.previousElementSibling;
+    if (temp == null) {
+        return true;
+    } else {
+        temp = temp.firstChild.className;
+        if (temp == "mw-diff-movedpara-left") {
+
+            return false;
+
         } else {
-            temp = temp.firstChild.className;
-            if (temp == "mw-diff-movedpara-left") {
-
-                return false;
-
-            } else {
-                return true;
-            }
+            return true;
         }
     }
+}
