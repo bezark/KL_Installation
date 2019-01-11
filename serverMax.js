@@ -24,6 +24,7 @@ console.log("Stream starting");
 
 let nextSecondKickedOff = false;
 
+let doubleChecklist = [];
 
 // This gets the list and maintains it every 3 seconds
 
@@ -229,7 +230,8 @@ function processList(page, callback) {
     for (let x = 0; x < list.length; x++) {
 
         let tStamp = list[x].attribs["data-mw-ts"];
-        let tempHref = list[x].children[1].children[1].attribs.href;
+        // let tempHref = list[x].children[1].children[1].attribs.href;
+        let tempHref = list[0].children[1].childNodes[0].children[0].children[0].attribs.href;
         // console.log(tempHref + " " + tStamp + " " + count++);
 
         output.push([tempHref, parseInt(tStamp), true]);
