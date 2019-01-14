@@ -9,7 +9,7 @@ moment().format();
 const path = require('path');
 
 
-// const Max = require('max-api');
+const Max = require('max-api');
 
 
 
