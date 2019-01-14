@@ -19,7 +19,7 @@ let batchCounter = 0;
 
 let counter = null;
 
-console.log("Stream starting");
+Max.post("Stream starting");
 
 
 let nextSecondKickedOff = false;
@@ -28,8 +28,8 @@ let doubleChecklist = [];
 
 // This gets the list and maintains it every 3 seconds
 
-// Max.addHandler("nextSecond", () => {
-setInterval(() => {
+Max.addHandler("nextSecond", () => {
+    // setInterval(() => {
     //check that counter isn't null
 
     if (counter != null) {
@@ -40,7 +40,7 @@ setInterval(() => {
 
         let maxOutput = listOutput.filter(
             (elem) => {
-                // console.log(counter + " " + dateConvert(elem[1])); 
+                // Max.post(counter + " " + dateConvert(elem[1])); 
                 return counter.isSame(dateConvert(elem[1]));
             });
 
@@ -57,7 +57,7 @@ setInterval(() => {
 
             doubleChecklist = tempDubArr;
 
-            console.log("Just trimmed doubleChecklist " + doubleChecklist.length);
+            Max.post("Just trimmed doubleChecklist " + doubleChecklist.length);
 
         }
 
@@ -69,28 +69,28 @@ setInterval(() => {
         listOutput = listOutput.filter(elem => counter.isBefore(dateConvert(elem[1])));
         Max.post(listOutput.length);
 
-        // console.log(maxOutput)
+        // Max.post(maxOutput)
         maxOutput = maxOutput.map(x => x[0]);
-        // console.log(maxOutput);
+        // Max.post(maxOutput);
 
         // maxOutput = removeDuplicates(maxOutput);
 
 
-        // console.log(maxOutput);
+        // Max.post(maxOutput);
 
         counter.add(1, 's');
 
         // Max.post(maxOutput);
         if (maxOutput.length) {
             Max.outlet(maxOutput);
-        };
+        }
 
     } else {
 
-        console.log("counter is null");
+        Max.post("counter is null");
 
     }
-}, 1000);
+});
 
 function removeDuplicates(arr) {
     let unique_array = [];
@@ -118,11 +118,11 @@ function dateConvert(string) {
 
 
 
-// Max.addHandler("fetch", () => {
+Max.addHandler("fetch", () => {
 
-setInterval(() => {
+    // setInterval(() => {
     getChanges((x) => {
-        // console.log(x);
+        // Max.post(x);
 
 
         if (counter == null) {
@@ -134,16 +134,16 @@ setInterval(() => {
         Max.post(x.length + " in stack");
         async.eachOf(x, (target, key, callbutt) => {
 
-            // console.log(target + " -- " + key);
+            // Max.post(target + " -- " + key);
 
             getDeletion(target[0], function (output, url) {
 
-                // console.log(output);
+                // Max.post(output);
 
 
                 if (output != null && x[key][1] != undefined) {
 
-                    // console.log(x[key][1]);
+                    // Max.post(x[key][1]);
 
                     listOutput.push([output, x[key][1]]);
 
@@ -154,7 +154,7 @@ setInterval(() => {
                 //delete from list
 
 
-                // console.log("  -  ");
+                // Max.post("  -  ");
 
             });
 
@@ -162,7 +162,7 @@ setInterval(() => {
 
         }, (err) => {
 
-            // console.log("sort");
+            // Max.post("sort");
 
             listOutput.sort((a, b) => {
 
@@ -170,7 +170,7 @@ setInterval(() => {
 
             });
 
-            // console.log("end sort");
+            // Max.post("end sort");
 
             Max.outlet("refetch");
 
@@ -186,21 +186,21 @@ setInterval(() => {
 
     });
 
-}, 10000);
+});
 
 
 
 function getChanges(callback) {
     // batchCounter++;
-    console.log("Batch: " + batchCounter++);
+    Max.post("Batch: " + batchCounter++);
 
     let req = https.get("https://en.wikipedia.org/wiki/Special:RecentChanges?goodfaith=likelygood&hidecategorization=1&hideWikibase=1&limit=500&days=0.04166&urlversion=2",
         (res) => {
-            console.log('statusCode:', res.statusCode);
-            //console.log('headers:', res.headers);
+            Max.post('statusCode:', res.statusCode);
+            //Max.post('headers:', res.headers);
             let page = "";
             res.on('data', (d) => {
-                //console.log(d.toString());
+                //Max.post(d.toString());
                 page += d.toString();
 
             });
@@ -230,92 +230,46 @@ function processList(page, callback) {
     // $(".mw-changeslist-diff")
     let count = 0;
 
-    <<
-    << << < HEAD
+    Max.post("doubleChecklist.length " + doubleChecklist.length);
+
     for (let x = 0; x < list.length; x++) {
 
-        let tStamp = list[x].attribs["data-mw-ts"];
-        // let tempHref = list[x].children[1].children[1].attribs.href;
-        let tempHref = list[0].children[1].childNodes[0].children[0].children[0].attribs.href;
-        // console.log(tempHref + " " + tStamp + " " + count++);
+        let tStamp = list[x].parent.parent.parent.parent.attribs["data-mw-ts"];
+        let tempHref = list[x].attribs.href;
+        // Max.post(tempHref + " " + tStamp + " " + count++);
 
-        output.push([tempHref, parseInt(tStamp), true]);
+        let tempdubs = doubleChecklist.filter(listItem => {
+            return listItem[0] == tempHref;
+        });
 
+        if (tempdubs.length == 0) {
 
+            output.push([tempHref, parseInt(tStamp), true]);
+
+        } else {
+
+            // Max.post("already in list " + x);
+
+        }
 
     }
     callback(output);
 }
 
-===
-=== =
-console.log("doubleChecklist.length " + doubleChecklist.length);
-
-for (let x = 0; x < list.length; x++) {
-
-    let tStamp = list[x].parent.parent.parent.parent.attribs["data-mw-ts"];
-    let tempHref = list[x].attribs.href;
-    // console.log(tempHref + " " + tStamp + " " + count++);
-
-    let tempdubs = doubleChecklist.filter(listItem => {
-        return listItem[0] == tempHref;
-    });
-
-    if (tempdubs.length == 0) {
-
-        output.push([tempHref, parseInt(tStamp), true]);
-
-    } else {
-
-        // console.log("already in list " + x);
-
-    }
-
-}
-callback(output);
-}
-
->>>
->>> > server - improvements
-//This replaces the link names with deletions, and flips bool.
-
-
-// setInterval(() => {
-//     console.log("delGetter");
-//     console.log(list.length);
-//     // for (let i = list.length - 1; i >= 0; i--) {
-//     //     // console.log(list[i][2]);
-//     //     if (list[i][2]) {
-//     //         url = list[i][0];
-
-//     //         getDeletion(url, (x) => {
-
-//     //             console.log("getDeletion>callback")
-
-//     //         });
-//     //     }
-//     // }
-
-
-
-
-// }, 10000);
-
-
 function getDeletion(url, callback) {
 
-    // console.log("https://en.wikipedia.org" + url);
+    // Max.post("https://en.wikipedia.org" + url);
 
     let req = https.get("https://en.wikipedia.org" + url,
         (res) => {
-            // console.log('statusCode:', res.statusCode);
+            // Max.post('statusCode:', res.statusCode);
             // if (res.statusCode != 200) {
             //     callback(null);
             // }
-            //console.log('headers:', res.headers);
+            //Max.post('headers:', res.headers);
             let data = "";
             res.on('data', (d) => {
-                //console.log(d.toString());
+                //Max.post(d.toString());
                 data += d.toString();
 
             });
@@ -326,9 +280,9 @@ function getDeletion(url, callback) {
 
                 tempDelLine = del(".diff-deletedline");
 
-                // console.log(tempDelLine);
+                // Max.post(tempDelLine);
 
-                // console.log(tempDelLine.length);
+                // Max.post(tempDelLine.length);
 
                 if (tempDelLine.length == 0) {
                     callback(null, url);
