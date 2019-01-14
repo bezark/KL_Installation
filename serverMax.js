@@ -9,7 +9,7 @@ moment().format();
 const path = require('path');
 
 
-const Max = require('max-api');
+// const Max = require('max-api');
 
 
 
@@ -28,14 +28,14 @@ let doubleChecklist = [];
 
 // This gets the list and maintains it every 3 seconds
 
-Max.addHandler("nextSecond", () => {
-
+// Max.addHandler("nextSecond", () => {
+setInterval(() => {
     //check that counter isn't null
 
     if (counter != null) {
 
 
-        
+
         //delete old
 
         let maxOutput = listOutput.filter(
@@ -47,66 +47,66 @@ Max.addHandler("nextSecond", () => {
 
 
         //culls duplicate list;
-        if(doubleChecklist.length > 1500){
+        if (doubleChecklist.length > 1500) {
 
             let tempDubArr = [];
 
-            for(let i = 0; i < 1000; i++){
-                tempDubArr.push(doubleChecklist[i]); 
+            for (let i = 0; i < 1000; i++) {
+                tempDubArr.push(doubleChecklist[i]);
             }
 
             doubleChecklist = tempDubArr;
 
-            Max.post("Just trimmed doubleChecklist " + doubleChecklist.length);
+            console.log("Just trimmed doubleChecklist " + doubleChecklist.length);
 
         }
 
 
 
-        
+
 
         // Max.post(listOutput.length);
         listOutput = listOutput.filter(elem => counter.isBefore(dateConvert(elem[1])));
         Max.post(listOutput.length);
 
-        
-        // Max.post(maxOutput)
+        // console.log(maxOutput)
         maxOutput = maxOutput.map(x => x[0]);
-        // Max.post(maxOutput);
-        
-        maxOutput = removeDuplicates(maxOutput);
+        // console.log(maxOutput);
+
+        // maxOutput = removeDuplicates(maxOutput);
 
 
-        // Max.post(maxOutput);
+        // console.log(maxOutput);
 
         counter.add(1, 's');
 
-       // Max.post(maxOutput);
-		if(maxOutput.length){
-        Max.outlet(maxOutput);};
+        // Max.post(maxOutput);
+        if (maxOutput.length) {
+            Max.outlet(maxOutput);
+        };
 
     } else {
 
-        Max.post("counter is null");
+        console.log("counter is null");
 
     }
-});
+}, 1000);
 
-function removeDuplicates(arr){
+function removeDuplicates(arr) {
     let unique_array = [];
-    for(let i = 0;i < arr.length; i++){
-        if(unique_array.indexOf(arr[i]) == -1){
+    for (let i = 0; i < arr.length; i++) {
+        if (unique_array.indexOf(arr[i]) == -1) {
             unique_array.push(arr[i]);
         }
     }
     return unique_array;
 }
 
-function dateConvert (string) {
+function dateConvert(string) {
 
     tempD = string.toString();
 
-    
+
     firstHalf = tempD.substring(0, 8);
     secondHalf = tempD.substring(8, tempD.length);
 
@@ -118,7 +118,9 @@ function dateConvert (string) {
 
 
 
-Max.addHandler("fetch", () => {
+// Max.addHandler("fetch", () => {
+
+setInterval(() => {
     getChanges((x) => {
         // console.log(x);
 
@@ -129,7 +131,7 @@ Max.addHandler("fetch", () => {
             counter = dateConvert(x[x.length - 1][1]);
 
         }
-        Max.post( x.length +" in stack");
+        Max.post(x.length + " in stack");
         async.eachOf(x, (target, key, callbutt) => {
 
             // console.log(target + " -- " + key);
@@ -171,20 +173,20 @@ Max.addHandler("fetch", () => {
             // console.log("end sort");
 
             Max.outlet("refetch");
-		
+
 
         });
 
 
-			if(!nextSecondKickedOff){
-				Max.outlet("nsko", 1);
-				nextSecondKickedOff = true;
-				}
+        if (!nextSecondKickedOff) {
+            Max.outlet("nsko", 1);
+            nextSecondKickedOff = true;
+        }
 
 
     });
 
-});
+}, 10000);
 
 
 
@@ -224,9 +226,12 @@ function processList(page, callback) {
     const $ = cheerio.load(page);
 
     let output = [];
-    let list = $(".special").children();
+    let list = $(".mw-changeslist-diff");
+    // $(".mw-changeslist-diff")
     let count = 0;
 
+    <<
+    << << < HEAD
     for (let x = 0; x < list.length; x++) {
 
         let tStamp = list[x].attribs["data-mw-ts"];
@@ -242,6 +247,36 @@ function processList(page, callback) {
     callback(output);
 }
 
+===
+=== =
+console.log("doubleChecklist.length " + doubleChecklist.length);
+
+for (let x = 0; x < list.length; x++) {
+
+    let tStamp = list[x].parent.parent.parent.parent.attribs["data-mw-ts"];
+    let tempHref = list[x].attribs.href;
+    // console.log(tempHref + " " + tStamp + " " + count++);
+
+    let tempdubs = doubleChecklist.filter(listItem => {
+        return listItem[0] == tempHref;
+    });
+
+    if (tempdubs.length == 0) {
+
+        output.push([tempHref, parseInt(tStamp), true]);
+
+    } else {
+
+        // console.log("already in list " + x);
+
+    }
+
+}
+callback(output);
+}
+
+>>>
+>>> > server - improvements
 //This replaces the link names with deletions, and flips bool.
 
 
