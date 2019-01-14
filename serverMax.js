@@ -227,19 +227,20 @@ function processList(page, callback) {
     const $ = cheerio.load(page);
 
     let output = [];
-    let list = $(".special").children();
+    let list = $(".mw-changeslist-diff");
+    // $(".mw-changeslist-diff")
     let count = 0;
 
     console.log("doubleChecklist.length " + doubleChecklist.length);
 
     for (let x = 0; x < list.length; x++) {
 
-        let tStamp = list[x].attribs["data-mw-ts"];
-        let tempHref = list[0].children[1].childNodes[0].children[0].children[0].attribs.href;
+        let tStamp = list[x].parent.parent.parent.parent.attribs["data-mw-ts"];
+        let tempHref = list[x].attribs.href;
         // console.log(tempHref + " " + tStamp + " " + count++);
 
         let tempdubs = doubleChecklist.filter(listItem => {
-            return listItem[0] == tempHref;
+            return listItem == tempHref;
         });
 
         if (tempdubs.length == 0) {
