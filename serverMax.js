@@ -29,66 +29,66 @@ let nextSecondKickedOff = false;
 
 // Max.addHandler("nextSecond", () => {
 setInterval(() => {
-//check that counter isn't null
+    //check that counter isn't null
 
-if (counter != null) {
-
-
-
-    //delete old
-
-    let maxOutput = listOutput.filter(
-        (elem) => {
-            // console.log(counter + " " + dateConvert(elem[1])); 
-            return counter.isSame(dateConvert(elem[1]));
-        });
+    if (counter != null) {
 
 
-    //culls duplicate list;
-    if (doubleChecklist.length > 1500) {
 
-        let tempDubArr = [];
+        //delete old
 
-        for (let i = 0; i < 1000; i++) {
-            tempDubArr.push = doubleChecklist[i];
+        let maxOutput = listOutput.filter(
+            (elem) => {
+                // console.log(counter + " " + dateConvert(elem[1])); 
+                return counter.isSame(dateConvert(elem[1]));
+            });
+
+
+        //culls duplicate list;
+        if (doubleChecklist.length > 1500) {
+
+            let tempDubArr = [];
+
+            for (let i = 0; i < 1000; i++) {
+                tempDubArr.push = doubleChecklist[i];
+            }
+
+            doubleChecklist = tempDubArr;
+
+            console.log("Just trimmed doubleChecklist " + doubleChecklist.length);
+
         }
 
-        doubleChecklist = tempDubArr;
 
-        console.log("Just trimmed doubleChecklist " + doubleChecklist.length);
+        // console.log(listOutput.length);
+        listOutput = listOutput.filter(elem => counter.isBefore(dateConvert(elem[1])));
+
+        console.log("listOutput.length " + listOutput.length);
+
+
+        // console.log(maxOutput)
+        maxOutput = maxOutput.map(x => x[0]);
+        // console.log(maxOutput);
+
+        // maxOutput = removeDuplicates(maxOutput);
+
+
+        // console.log(maxOutput);
+
+        counter.add(1, 's');
+
+
+        console.log(maxOutput);
+        if (maxOutput.length) {
+            // Max.outlet(maxOutput);
+        }
+
+
+    } else {
+
+        console.log("counter is null");
 
     }
-
-
-    // console.log(listOutput.length);
-    listOutput = listOutput.filter(elem => counter.isBefore(dateConvert(elem[1])));
-
-    console.log("listOutput.length " + listOutput.length);
-
-
-    // console.log(maxOutput)
-    maxOutput = maxOutput.map(x => x[0]);
-    // console.log(maxOutput);
-
-    // maxOutput = removeDuplicates(maxOutput);
-
-
-    // console.log(maxOutput);
-
-    counter.add(1, 's');
-
-
-    console.log(maxOutput);
-    if (maxOutput.length) {
-        // Max.outlet(maxOutput);
-    }
-
-
-} else {
-
-    console.log("counter is null");
-
-}
 }, 1000);
 
 function removeDuplicates(arr) {
@@ -187,7 +187,7 @@ setInterval(() => {
 
     });
 
-}, 5000);
+}, 10000);
 
 
 
@@ -207,7 +207,7 @@ function getChanges(callback) {
             });
 
             res.on('end', () => {
-                
+
                 processList(page, callback);
 
             });
@@ -240,7 +240,7 @@ function processList(page, callback) {
         // console.log(tempHref + " " + tStamp + " " + count++);
 
         let tempdubs = doubleChecklist.filter(listItem => {
-            return listItem == tempHref;
+            return listItem[0] == tempHref;
         });
 
         if (tempdubs.length == 0) {
@@ -248,6 +248,8 @@ function processList(page, callback) {
             output.push([tempHref, parseInt(tStamp), true]);
 
         } else {
+
+            // console.log("already in list " + x);
 
         }
 
