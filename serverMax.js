@@ -136,6 +136,8 @@ Max.addHandler("fetch", () => {
 
             // Max.post(target + " -- " + key);
 
+            doubleChecklist.unshift(target);
+
             getDeletion(target[0], function (output, url) {
 
                 // Max.post(output);
