@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
+		"rect" : [ 421.0, 502.0, 972.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,28 @@
 		"subpatcher_template" : "",
 		"showontab" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 745.0, 664.0, 150.0, 20.0 ],
+					"text" : "10.32.71.165."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 670.0, 143.0, 165.0, 22.0 ],
+					"text" : "j.oscroute /newPoem /piState"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-41",
 					"maxclass" : "newobj",
@@ -375,7 +397,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 491.0, 337.0, 77.0, 22.0 ],
+					"patching_rect" : [ 478.5, 337.0, 77.0, 22.0 ],
 					"text" : "s piActivated"
 				}
 
@@ -452,8 +474,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 247.0, 640.0, 165.0, 22.0 ],
-					"text" : "udpsend 192.168.1.175 3333"
+					"patching_rect" : [ 247.0, 644.0, 151.0, 22.0 ],
+					"text" : "udpsend 10.32.71.83 3333"
 				}
 
 			}
@@ -500,8 +522,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 418.0, 297.0, 165.0, 22.0 ],
-					"text" : "j.oscroute /newPoem /piState"
+					"patching_rect" : [ 418.0, 297.0, 140.0, 22.0 ],
+					"text" : "route /newPoem /piState"
 				}
 
 			}
@@ -511,7 +533,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 554.0, 297.0, 32.0, 22.0 ],
+					"patching_rect" : [ 613.0, 289.0, 32.0, 22.0 ],
 					"text" : "print"
 				}
 
@@ -698,11 +720,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "j.oscroute.mxo",
-				"type" : "iLaX"
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 
