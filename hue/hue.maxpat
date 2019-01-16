@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 485.0, 98.0, 947.0, 787.0 ],
+		"rect" : [ 60.0, 187.0, 947.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,19 @@
 		"tags" : "",
 		"style" : "solarized?",
 		"subpatcher_template" : "",
+		"showontab" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-182",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 370.0, 285.0, 77.0, 22.0 ],
+					"text" : "s fadeWaves"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "message",
@@ -69,7 +81,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 619.0, 361.0, 98.0, 22.0 ],
-					"presentation_linecount" : 3,
 					"text" : "7399 125 116 20"
 				}
 
@@ -117,8 +128,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 98.0, 239.0, 69.0, 22.0 ],
-					"text" : "metro 2000"
+					"patching_rect" : [ 98.0, 235.0, 69.0, 22.0 ],
+					"text" : "metro 4000"
 				}
 
 			}
@@ -142,7 +153,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 457.0, 361.0, 150.0, 22.0 ],
-					"presentation_linecount" : 3,
 					"text" : "43337 253 253 16"
 				}
 
@@ -264,7 +274,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-32",
@@ -2038,7 +2047,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 213.0, 326.0, 105.0, 22.0 ],
-					"text" : "38333 200 202 20"
+					"text" : "38333 200 202 40"
 				}
 
 			}
@@ -2050,7 +2059,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 98.0, 326.0, 105.0, 22.0 ],
-					"text" : "38333 171 202 20"
+					"text" : "38333 100 202 40"
 				}
 
 			}
@@ -2140,7 +2149,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 142.5, 596.31915283203125, 400.0, 220.0 ],
+					"patching_rect" : [ 217.0, 551.31915283203125, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -2152,9 +2161,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 61.0, 493.0, 103.0, 22.0 ],
+					"patching_rect" : [ 61.0, 493.0, 175.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"autostart" : 0,
+						"autostart" : 1,
 						"defer" : 0,
 						"node" : "",
 						"npm" : "",
@@ -2162,7 +2171,7 @@
 					}
 ,
 					"style" : "solarized?",
-					"text" : "node.script hue.js"
+					"text" : "node.script hue.js @autostart 1"
 				}
 
 			}
@@ -2211,7 +2220,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-182", 0 ],
+					"order" : 1,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
+					"order" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
