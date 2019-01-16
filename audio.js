@@ -5,19 +5,30 @@ const say = require("say");
 const path = require('path');
 
 const fs = require("fs");
-const {
-    exec
-} = require('child_process');
 
-const { spawn } = require('child_process');
 const Max = require('max-api');
 
-const audioFolder = __dirname + "/audio"
+const audioFolder = __dirname + "/audio";
 
+let voiceBankIndex = 0;
+let voiceBankName = "default";
+
+let voiceBankIsFree = new Array(6);
+
+for(i in voiceBankIsFree){voiceBankIsFree[i] = true;};
+Max.post(voiceBankIsFree);
 
 Max.post("Audio Process");
 Max.post(audioFolder);
 Max.post(path.isAbsolute(audioFolder));
+
+Max.addHandler("init", (string) =>{
+
+    voiceBankName = string;
+
+    Max.post("filenames will now use: " + voiceBankName);
+
+})
 
 Max.addHandler("say", (string) => {
 
@@ -30,19 +41,46 @@ Max.addHandler("say", (string) => {
 
     Max.post('say \"' + strClean +'\" -o audio/test1');
 
+    
 
-    exec('say \"' + strClean +'\" -o audio/test1', (error, stdout, stderr) => {
-        if (error) {
-            Max.post(`exec error: ${error}`);
-            return;
+    Max.post(voiceBankIndex);
+
+    let tempFreeVoice = findFreeVoice(voiceBankIsFree);
+
+    say.export(strClean, "Alex", 0.5, audioFolder + "/" + voiceBankName + "_" + voiceBankIndex + ".wav", (err) => {
+
+        if(err != null){
+            console.log(err);
+        } else {
+            Max.post("file written to " + audioFolder + "/" + voiceBankName + "_" + voiceBankIndex + ".wav");
+            Max.outlet(audioFolder + "/" + voiceBankName + "_" + voiceBankIndex + ".wav");
+            voiceBankIndex = addMod(voiceBankIndex, 4);
+            console.log(voiceBankIndex);
         }
-        Max.post(`stdout: ${stdout}`);
-        Max.post(`stderr: ${stderr}`);
 
-        Max.outlet(audioFolder + "/test1.aiff");
+    })
 
-    });
-
+    
+    
 
 
 });
+
+function findFreeVoice(){
+    console.log("yes");
+}
+
+
+
+function addMod(int, lim){
+
+    
+    int = int + 1;
+
+    if(int > lim - 1){
+        return 0;
+    } else {
+        return int;
+    }
+
+}
