@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 124.0, 102.0, 1018.0, 758.0 ],
+		"rect" : [ 124.0, 102.0, 747.0, 758.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-50",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 62.666667938232422, 105.333335876464844, 35.0, 22.0 ],
+					"text" : "reset"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -51,35 +63,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-35",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 200.0, 554.5, 45.0, 22.0 ],
-					"text" : "state 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 200.0, 589.5, 59.0, 22.0 ],
-					"text" : "s audio.js"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 7,
 					"numoutlets" : 7,
 					"outlettype" : [ "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 92.0, 305.0, 96.0, 22.0 ],
+					"patching_rect" : [ 129.0, 297.0, 96.0, 22.0 ],
 					"text" : "route 0 1 2 3 4 5"
 				}
 
@@ -93,101 +82,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 366.0, 89.0, 62.0, 22.0 ],
 					"text" : "init voice1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autosave" : 1,
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 8,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
-					"patching_rect" : [ 699.0, 524.2969970703125, 300.0, 100.0 ],
-					"save" : [ "#N", "vst~", "loaduniqueid", 0, "ValhallaRoom.vstinfo", ";" ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_invisible" : 1,
-							"parameter_longname" : "vst~",
-							"parameter_shortname" : "vst~",
-							"parameter_type" : 3
-						}
-
-					}
-,
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 1,
-						"parameter_mappable" : 0
-					}
-,
-					"snapshot" : 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "snapshotlist",
-						"origin" : "vst~",
-						"type" : "list",
-						"subtype" : "Undefined",
-						"embed" : 1,
-						"snapshot" : 						{
-							"pluginname" : "ValhallaRoom.vstinfo",
-							"plugindisplayname" : "ValhallaRoom",
-							"pluginsavedname" : "ValhallaRoom",
-							"pluginsaveduniqueid" : 1383429485,
-							"version" : 1,
-							"isbank" : 0,
-							"isbase64" : 1,
-							"sliderorder" : [  ],
-							"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-							"blob" : "716.CMlaKA....fQPMDZ....AHUc00F.ATP..............................................H.jVMjLgbn....OVEFanEFarElTu8Vaf.Ga0cVZtYUYxMWZu4VOhDiK03RLh.BbxU1bkQmSg0VY8HBQkYVX0wFch.RaogWOh.iKyfSL4LyL0jSN2DCLzXCMzbyM0PiHf.mbkQVYrEVd8HBLt.SL4jSN4jSN4TSMxjiM0DiMzDCN0HBHjU1XgkWOhDiHffTZmg1P0QWOh.iK0LCLx.SLyDSM3bSN3HSL2byMyPiHfTVXxwVdLEFck0TZ30iHv3RMh.BagQWYSkldk0iHv3RMh.BagQWYCI2ayMWOhDiHfvVXzUVSuQlTgQWY8HBLt.SNvjCL4.SNyXSL3LSNxjCMzLyL1HBHrEFck0zajQTYvQGZ8HBLtTiHfHEUBE1by0TcrQWZvwVd8HBLtLyLyLyLyLCMyHiM2PCMvbSN0jiHfHEUX8lckIWOh.iKvjCL4.SNvjyL1DCNyjiL4PCMyLiMh.hTTgTZmgVS0wFcoAGa40iHv3BMzPCMzPCM2bSM0fSLyTSN3XyLyHBHRQERocFZX8lckIWOh.iK0LCLx.SLyDSM3bSN3HSL2byMyPiHfTVXxwVdSkldk0iHv3BLxjCLxjCLxfCM4.SL3TyMybiMwHBHkElbrk2Px81by0iHv3RLv.CLv.CLvDCM4.SLwXSLwjyL3HBHkElbrkWSuQlTgQWY8HBLt.SNvjCL4.SNyXSL3LSNxjCMzLyL1HBHkElbrkWSuQFQkAGcn0iHvHBHkElbrk2Tk4FY8HBLh.BYoYlY0MWZu4VOhDiHfPWdvUVOh.iKxbSL2byMyLSL3HSNvbSLvPCM4HiHfzVZ3wzaisVOh.iHfTWZWkFYzgVOhbyL0HBH0kFRkk1YnQWOhPiMvHxK9.."
-						}
-,
-						"snapshotlist" : 						{
-							"current_snapshot" : 0,
-							"entries" : [ 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "ValhallaRoom",
-									"origin" : "ValhallaRoom.vstinfo",
-									"type" : "VST",
-									"subtype" : "AudioEffect",
-									"embed" : 0,
-									"snapshot" : 									{
-										"pluginname" : "ValhallaRoom.vstinfo",
-										"plugindisplayname" : "ValhallaRoom",
-										"pluginsavedname" : "ValhallaRoom",
-										"pluginsaveduniqueid" : 1383429485,
-										"version" : 1,
-										"isbank" : 0,
-										"isbase64" : 1,
-										"sliderorder" : [  ],
-										"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-										"blob" : "716.CMlaKA....fQPMDZ....AHUc00F.ATP..............................................H.jVMjLgbn....OVEFanEFarElTu8Vaf.Ga0cVZtYUYxMWZu4VOhDiK03RLh.BbxU1bkQmSg0VY8HBQkYVX0wFch.RaogWOh.iKyfSL4LyL0jSN2DCLzXCMzbyM0PiHf.mbkQVYrEVd8HBLt.SL4jSN4jSN4TSMxjiM0DiMzDCN0HBHjU1XgkWOhDiHffTZmg1P0QWOh.iK0LCLx.SLyDSM3bSN3HSL2byMyPiHfTVXxwVdLEFck0TZ30iHv3RMh.BagQWYSkldk0iHv3RMh.BagQWYCI2ayMWOhDiHfvVXzUVSuQlTgQWY8HBLt.SNvjCL4.SNyXSL3LSNxjCMzLyL1HBHrEFck0zajQTYvQGZ8HBLtTiHfHEUBE1by0TcrQWZvwVd8HBLtLyLyLyLyLCMyHiM2PCMvbSN0jiHfHEUX8lckIWOh.iKvjCL4.SNvjyL1DCNyjiL4PCMyLiMh.hTTgTZmgVS0wFcoAGa40iHv3BMzPCMzPCM2bSM0fSLyTSN3XyLyHBHRQERocFZX8lckIWOh.iK0LCLx.SLyDSM3bSN3HSL2byMyPiHfTVXxwVdSkldk0iHv3BLxjCLxjCLxfCM4.SL3TyMybiMwHBHkElbrk2Px81by0iHv3RLv.CLv.CLvDCM4.SLwXSLwjyL3HBHkElbrkWSuQlTgQWY8HBLt.SNvjCL4.SNyXSL3LSNxjCMzLyL1HBHkElbrkWSuQFQkAGcn0iHvHBHkElbrk2Tk4FY8HBLh.BYoYlY0MWZu4VOhDiHfPWdvUVOh.iKxbSL2byMyLSL3HSNvbSLvPCM4HiHfzVZ3wzaisVOh.iHfTWZWkFYzgVOhbyL0HBH0kFRkk1YnQWOhPiMvHxK9.."
-									}
-,
-									"fileref" : 									{
-										"name" : "ValhallaRoom",
-										"filename" : "ValhallaRoom.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "a8518d1b9d28126936d234c29919e09f"
-									}
-
-								}
- ]
-						}
-
-					}
-,
-					"text" : "vst~ ValhallaRoom.vstinfo",
-					"varname" : "vst~",
-					"viewvisibility" : 1
 				}
 
 			}
@@ -217,90 +111,11 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 165.0, 475.0, 32.0, 22.0 ],
-					"text" : "start"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 703.0, 703.0, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 165.0, 519.0, 54.0, 22.0 ],
-					"text" : "play~ v0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-72",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 36.0, 494.0, 43.0, 23.0 ],
-					"text" : "set v0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.501961, 0.717647, 0.764706, 1.0 ],
-					"buffername" : "v0",
-					"gridcolor" : [ 0.352941, 0.337255, 0.521569, 1.0 ],
-					"id" : "obj-73",
-					"maxclass" : "waveform~",
-					"numinlets" : 5,
-					"numoutlets" : 6,
-					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
-					"patching_rect" : [ 36.0, 550.5, 138.0, 60.59405517578125 ],
-					"selectioncolor" : [ 0.313726, 0.498039, 0.807843, 0.0 ],
-					"setunit" : 1,
-					"waveformcolor" : [ 0.082353, 0.25098, 0.431373, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 92.0, 392.0, 65.0, 22.0 ],
-					"text" : "replace $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 92.0, 428.0, 92.0, 22.0 ],
-					"text" : "buffer~ v0 5000"
+					"patching_rect" : [ 80.5, 889.6666259765625, 45.0, 45.0 ]
 				}
 
 			}
@@ -353,7 +168,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 294.0, 258.0, 400.0, 220.0 ],
+					"patching_rect" : [ 417.0, 206.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -387,240 +202,6 @@
 					}
 ,
 					"text" : "node.script audio.js @autostart 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"autosave" : 1,
-					"bgmode" : 1,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-13",
-					"lockeddragscroll" : 0,
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 4,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 699.0, 305.0, 418.0, 196.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_invisible" : 1,
-							"parameter_longname" : "amxd~",
-							"parameter_shortname" : "amxd~",
-							"parameter_type" : 3
-						}
-
-					}
-,
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 1,
-						"patchername" : "Poly Vocoder.amxd",
-						"patchername_fallback" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Poly Vocoder.amxd"
-					}
-,
-					"snapshot" : 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "snapshotlist",
-						"origin" : "max~",
-						"type" : "list",
-						"subtype" : "Undefined",
-						"embed" : 1,
-						"snapshot" : 						{
-							"name" : "Poly Vocoder.amxd",
-							"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Poly Vocoder.amxd",
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"Bus" : 0.0,
-									"Midi" : 0.0,
-									"AmbienceThreshold" : -10.0,
-									"Atten" : 1.0,
-									"CorrectionAmount" : 100.0,
-									"CorrectionThreshold" : 0.0,
-									"Dry/Wet" : 100.0,
-									"Fade" : 4775.651517623880864,
-									"Gain" : 0.0,
-									"Latency" : 1.0,
-									"PreGain" : 0.0,
-									"Quality" : 3.0,
-									"Shift" : 0.0,
-									"SibilanceThreshold" : 100.0,
-									"Spread" : 100.0,
-									"Pattern" : 0.0,
-									"blob" : 									{
-										"Chord" : [ 62, 26 ],
-										"Storage" : [ 											{
-												"pattrstorage" : 												{
-													"name" : "u673000509",
-													"slots" : 													{
-														"2" : 														{
-															"id" : 2,
-															"data" : 															{
-																"Chord" : [ 57, 63, 61, 53, 68, 20, 71, 18 ]
-															}
-
-														}
-,
-														"3" : 														{
-															"id" : 3,
-															"data" : 															{
-																"Chord" : [ -1 ]
-															}
-
-														}
-,
-														"4" : 														{
-															"id" : 4,
-															"data" : 															{
-																"Chord" : [ -1 ]
-															}
-
-														}
-,
-														"5" : 														{
-															"id" : 5,
-															"data" : 															{
-																"Chord" : [ -1 ]
-															}
-
-														}
-,
-														"6" : 														{
-															"id" : 6,
-															"data" : 															{
-																"Chord" : [ -1 ]
-															}
-
-														}
-
-													}
-
-												}
-
-											}
- ]
-									}
-
-								}
-
-							}
-
-						}
-,
-						"snapshotlist" : 						{
-							"current_snapshot" : 0,
-							"entries" : [ 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "Poly Vocoder.amxd",
-									"origin" : "Poly Vocoder.amxd",
-									"type" : "amxd",
-									"subtype" : "Undefined",
-									"embed" : 0,
-									"snapshot" : 									{
-										"name" : "Poly Vocoder.amxd",
-										"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Poly Vocoder.amxd",
-										"valuedictionary" : 										{
-											"parameter_values" : 											{
-												"Bus" : 0.0,
-												"Midi" : 0.0,
-												"AmbienceThreshold" : -10.0,
-												"Atten" : 1.0,
-												"CorrectionAmount" : 100.0,
-												"CorrectionThreshold" : 0.0,
-												"Dry/Wet" : 100.0,
-												"Fade" : 4775.651517623880864,
-												"Gain" : 0.0,
-												"Latency" : 1.0,
-												"PreGain" : 0.0,
-												"Quality" : 3.0,
-												"Shift" : 0.0,
-												"SibilanceThreshold" : 100.0,
-												"Spread" : 100.0,
-												"Pattern" : 0.0,
-												"blob" : 												{
-													"Chord" : [ 62, 26 ],
-													"Storage" : [ 														{
-															"pattrstorage" : 															{
-																"name" : "u673000509",
-																"slots" : 																{
-																	"2" : 																	{
-																		"id" : 2,
-																		"data" : 																		{
-																			"Chord" : [ 57, 63, 61, 53, 68, 20, 71, 18 ]
-																		}
-
-																	}
-,
-																	"3" : 																	{
-																		"id" : 3,
-																		"data" : 																		{
-																			"Chord" : [ -1 ]
-																		}
-
-																	}
-,
-																	"4" : 																	{
-																		"id" : 4,
-																		"data" : 																		{
-																			"Chord" : [ -1 ]
-																		}
-
-																	}
-,
-																	"5" : 																	{
-																		"id" : 5,
-																		"data" : 																		{
-																			"Chord" : [ -1 ]
-																		}
-
-																	}
-,
-																	"6" : 																	{
-																		"id" : 6,
-																		"data" : 																		{
-																			"Chord" : [ -1 ]
-																		}
-
-																	}
-
-																}
-
-															}
-
-														}
- ]
-												}
-
-											}
-
-										}
-
-									}
-,
-									"fileref" : 									{
-										"name" : "Poly Vocoder.amxd",
-										"filename" : "Poly Vocoder.amxd.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "f2e8f1e612af5dda67f3ba7effbbac7e"
-									}
-
-								}
- ]
-						}
-
-					}
-,
-					"text" : "amxd~ \"Poly Vocoder.amxd\"",
-					"varname" : "amxd~",
-					"viewvisibility" : 1
 				}
 
 			}
@@ -861,22 +442,8 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
-					"source" : [ "obj-13", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-13", 0 ]
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-1", 0 ]
 				}
 
 			}
@@ -884,13 +451,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 2 ],
-					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -912,27 +472,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 1 ],
-					"source" : [ "obj-2", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -968,13 +507,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-36", 0 ]
 				}
@@ -996,8 +528,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-5", 1 ]
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-50", 0 ]
 				}
 
 			}
@@ -1008,31 +540,8 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-73", 0 ],
-					"source" : [ "obj-72", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-8", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"source" : [ "obj-9", 1 ]
-				}
-
-			}
  ],
 		"parameters" : 		{
-			"obj-13" : [ "amxd~", "amxd~", 0 ],
-			"obj-2" : [ "vst~", "vst~", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1040,13 +549,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Poly Vocoder.amxd.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "audio.js",
 				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
 				"patcherrelativepath" : ".",
@@ -1069,13 +571,6 @@
 				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ValhallaRoom.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
 				"implicit" : 1
 			}
  ],

@@ -33,6 +33,13 @@ Max.addHandler("init", (string) => {
 
 });
 
+Max.addHandler("reset", ()=>{
+
+    for (let i = 0; i < voiceBankIsFree.length; i++) {
+        voiceBankIsFree[i] = true;
+    }
+});
+
 
 Max.addHandler("say", (string) => {
 
@@ -49,7 +56,7 @@ Max.addHandler("say", (string) => {
 
     if (tempFreeVoice) {
 
-        say.export(strClean, "Alex", 0.5, audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav", (err) => {
+        say.export(strClean, "Alex", 1.2, audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav", (err) => {
 
             if (err != null) {
                 console.log(err);
