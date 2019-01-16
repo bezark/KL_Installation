@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 104.0, 993.0, 758.0 ],
+		"rect" : [ 124.0, 102.0, 993.0, 758.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -85,7 +85,7 @@
 							"isbase64" : 1,
 							"sliderorder" : [  ],
 							"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-							"blob" : "716.CMlaKA....fQPMDZ....AHUc00F.ATP..............................................H.jVMjLgbn....OVEFanEFarElTu8Vaf.Ga0cVZtYUYxMWZu4VOhDiK03RLh.BbxU1bkQmSg0VY8HBQkYVX0wFch.RaogWOh.iKy.SN3XyLxXSNyHSNvbSLvPCM4HiHf.mbkQVYrEVd8HBLt.SL4jSN4jSN4TSMxjiM0DiMzDCN0HBHjU1XgkWOhDiHffTZmg1P0QWOh.iK0LCLx.SLyDSM3bSN3HSL2byMyPiHfTVXxwVdLEFck0TZ30iHv3RMh.BagQWYSkldk0iHv3RMh.BagQWYCI2ayMWOhDiHfvVXzUVSuQlTgQWY8HBLt.SNvjCL4.SNyXSL3LSNxjCMzLyL1HBHrEFck0zajQTYvQGZ8HBLtTiHfHEUBE1by0TcrQWZvwVd8HBLtLyLyLyLyLCMyHiM2PCMvbSN0jiHfHEUX8lckIWOh.iKvjCL4.SNvjyL1DCNyjiL4PCMyLiMh.hTTgTZmgVS0wFcoAGa40iHv3BMzPCMzPCM2bSM0fSLyTSN3XyLyHBHRQERocFZX8lckIWOh.iK0LCLx.SLyDSM3bSN3HSL2byMyPiHfTVXxwVdSkldk0iHv3BLxjCLxjCLxfCM4.SL3TyMybiMwHBHkElbrk2Px81by0iHv3RLv.CLv.CLvDCM4.SLwXSLwjyL3HBHkElbrkWSuQlTgQWY8HBLt.SNvjCL4.SNyXSL3LSNxjCMzLyL1HBHkElbrkWSuQFQkAGcn0iHvHBHkElbrk2Tk4FY8HBLh.BYoYlY0MWZu4VOhDiHfPWdvUVOh.iKxbSL2byMyLSL3HSNvbSLvPCM4HiHfzVZ3wzaisVOh.iHfTWZWkFYzgVOhbyL0HBH0kFRkk1YnQWOhPiMvHxK9.."
+							"blob" : "716.CMlaKA....fQPMDZ....AHUc00F.ATP..............................................H.jVMjLgbn....OVEFanEFarElTu8Vaf.Ga0cVZtYUYxMWZu4VOhDiK03RLh.BbxU1bkQmSg0VY8HBQkYVX0wFch.RaogWOh.iKyfSL4LyL0jSN2DCLzXCMzbyM0PiHf.mbkQVYrEVd8HBLt.SL4jSN4jSN4TSMxjiM0DiMzDCN0HBHjU1XgkWOhDiHffTZmg1P0QWOh.iK0LCLx.SLyDSM3bSN3HSL2byMyPiHfTVXxwVdLEFck0TZ30iHv3RMh.BagQWYSkldk0iHv3RMh.BagQWYCI2ayMWOhDiHfvVXzUVSuQlTgQWY8HBLt.SNvjCL4.SNyXSL3LSNxjCMzLyL1HBHrEFck0zajQTYvQGZ8HBLtTiHfHEUBE1by0TcrQWZvwVd8HBLtLyLyLyLyLCMyHiM2PCMvbSN0jiHfHEUX8lckIWOh.iKvjCL4.SNvjyL1DCNyjiL4PCMyLiMh.hTTgTZmgVS0wFcoAGa40iHv3BMzPCMzPCM2bSM0fSLyTSN3XyLyHBHRQERocFZX8lckIWOh.iK0LCLx.SLyDSM3bSN3HSL2byMyPiHfTVXxwVdSkldk0iHv3BLxjCLxjCLxfCM4.SL3TyMybiMwHBHkElbrk2Px81by0iHv3RLv.CLv.CLvDCM4.SLwXSLwjyL3HBHkElbrkWSuQlTgQWY8HBLt.SNvjCL4.SNyXSL3LSNxjCMzLyL1HBHkElbrkWSuQFQkAGcn0iHvHBHkElbrk2Tk4FY8HBLh.BYoYlY0MWZu4VOhDiHfPWdvUVOh.iKxbSL2byMyLSL3HSNvbSLvPCM4HiHfzVZ3wzaisVOh.iHfTWZWkFYzgVOhbyL0HBH0kFRkk1YnQWOhPiMvHxK9.."
 						}
 ,
 						"snapshotlist" : 						{
@@ -109,7 +109,7 @@
 										"isbase64" : 1,
 										"sliderorder" : [  ],
 										"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-										"blob" : "716.CMlaKA....fQPMDZ....AHUc00F.ATP..............................................H.jVMjLgbn....OVEFanEFarElTu8Vaf.Ga0cVZtYUYxMWZu4VOhDiK03RLh.BbxU1bkQmSg0VY8HBQkYVX0wFch.RaogWOh.iKy.SN3XyLxXSNyHSNvbSLvPCM4HiHf.mbkQVYrEVd8HBLt.SL4jSN4jSN4TSMxjiM0DiMzDCN0HBHjU1XgkWOhDiHffTZmg1P0QWOh.iK0LCLx.SLyDSM3bSN3HSL2byMyPiHfTVXxwVdLEFck0TZ30iHv3RMh.BagQWYSkldk0iHv3RMh.BagQWYCI2ayMWOhDiHfvVXzUVSuQlTgQWY8HBLt.SNvjCL4.SNyXSL3LSNxjCMzLyL1HBHrEFck0zajQTYvQGZ8HBLtTiHfHEUBE1by0TcrQWZvwVd8HBLtLyLyLyLyLCMyHiM2PCMvbSN0jiHfHEUX8lckIWOh.iKvjCL4.SNvjyL1DCNyjiL4PCMyLiMh.hTTgTZmgVS0wFcoAGa40iHv3BMzPCMzPCM2bSM0fSLyTSN3XyLyHBHRQERocFZX8lckIWOh.iK0LCLx.SLyDSM3bSN3HSL2byMyPiHfTVXxwVdSkldk0iHv3BLxjCLxjCLxfCM4.SL3TyMybiMwHBHkElbrk2Px81by0iHv3RLv.CLv.CLvDCM4.SLwXSLwjyL3HBHkElbrkWSuQlTgQWY8HBLt.SNvjCL4.SNyXSL3LSNxjCMzLyL1HBHkElbrkWSuQFQkAGcn0iHvHBHkElbrk2Tk4FY8HBLh.BYoYlY0MWZu4VOhDiHfPWdvUVOh.iKxbSL2byMyLSL3HSNvbSLvPCM4HiHfzVZ3wzaisVOh.iHfTWZWkFYzgVOhbyL0HBH0kFRkk1YnQWOhPiMvHxK9.."
+										"blob" : "716.CMlaKA....fQPMDZ....AHUc00F.ATP..............................................H.jVMjLgbn....OVEFanEFarElTu8Vaf.Ga0cVZtYUYxMWZu4VOhDiK03RLh.BbxU1bkQmSg0VY8HBQkYVX0wFch.RaogWOh.iKyfSL4LyL0jSN2DCLzXCMzbyM0PiHf.mbkQVYrEVd8HBLt.SL4jSN4jSN4TSMxjiM0DiMzDCN0HBHjU1XgkWOhDiHffTZmg1P0QWOh.iK0LCLx.SLyDSM3bSN3HSL2byMyPiHfTVXxwVdLEFck0TZ30iHv3RMh.BagQWYSkldk0iHv3RMh.BagQWYCI2ayMWOhDiHfvVXzUVSuQlTgQWY8HBLt.SNvjCL4.SNyXSL3LSNxjCMzLyL1HBHrEFck0zajQTYvQGZ8HBLtTiHfHEUBE1by0TcrQWZvwVd8HBLtLyLyLyLyLCMyHiM2PCMvbSN0jiHfHEUX8lckIWOh.iKvjCL4.SNvjyL1DCNyjiL4PCMyLiMh.hTTgTZmgVS0wFcoAGa40iHv3BMzPCMzPCM2bSM0fSLyTSN3XyLyHBHRQERocFZX8lckIWOh.iK0LCLx.SLyDSM3bSN3HSL2byMyPiHfTVXxwVdSkldk0iHv3BLxjCLxjCLxfCM4.SL3TyMybiMwHBHkElbrk2Px81by0iHv3RLv.CLv.CLvDCM4.SLwXSLwjyL3HBHkElbrkWSuQlTgQWY8HBLt.SNvjCL4.SNyXSL3LSNxjCMzLyL1HBHkElbrkWSuQFQkAGcn0iHvHBHkElbrk2Tk4FY8HBLh.BYoYlY0MWZu4VOhDiHfPWdvUVOh.iKxbSL2byMyLSL3HSNvbSLvPCM4HiHfzVZ3wzaisVOh.iHfTWZWkFYzgVOhbyL0HBH0kFRkk1YnQWOhPiMvHxK9.."
 									}
 ,
 									"fileref" : 									{
@@ -144,7 +144,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -898,7 +898,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1339,8 +1339,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2" : [ "vst~", "vst~", 0 ],
 			"obj-13" : [ "amxd~", "amxd~", 0 ],
+			"obj-2" : [ "vst~", "vst~", 0 ],
 			"parameterbanks" : 			{
 
 			}
