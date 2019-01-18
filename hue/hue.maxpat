@@ -40,11 +40,24 @@
 		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-13",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 95.0, 326.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 63.0, 29.0, 150.0, 22.0 ],
+					"patching_rect" : [ 63.0, 29.0, 199.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 17.0, 30.0, 150.0, 22.0 ],
 					"text" : "HUE SCRIPT"
@@ -54,11 +67,10 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-182",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 370.0, 285.0, 77.0, 55.0 ],
+					"patching_rect" : [ 884.18084716796875, 267.0, 126.0, 24.0 ],
 					"text" : "s fadeWaves"
 				}
 
@@ -66,12 +78,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-19",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 834.68084716796875, 361.0, 91.0, 40.0 ],
+					"patching_rect" : [ 1431.680908203125, 302.0, 140.0, 24.0 ],
 					"text" : "7399 1 116 200"
 				}
 
@@ -79,12 +90,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 724.68084716796875, 361.0, 98.0, 40.0 ],
+					"patching_rect" : [ 1256.680908203125, 302.0, 147.0, 24.0 ],
 					"text" : "7399 255 116 20"
 				}
 
@@ -92,12 +102,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 619.0, 361.0, 98.0, 40.0 ],
+					"patching_rect" : [ 1081.0, 302.0, 147.0, 24.0 ],
 					"text" : "7399 125 116 20"
 				}
 
@@ -105,12 +114,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-16",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 309.0, 216.0, 32.0, 40.0 ],
+					"patching_rect" : [ 706.0, 174.0, 81.0, 24.0 ],
 					"text" : "t b 0"
 				}
 
@@ -118,12 +126,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-15",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 457.0, 317.0, 32.0, 40.0 ],
+					"patching_rect" : [ 863.0, 232.0, 81.0, 24.0 ],
 					"text" : "t b 0"
 				}
 
@@ -135,7 +142,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 98.0, 202.0, 29.5, 24.0 ],
+					"patching_rect" : [ 471.0, 178.0, 78.5, 24.0 ],
 					"text" : "1"
 				}
 
@@ -143,12 +150,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-11",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 98.0, 235.0, 69.0, 40.0 ],
+					"patching_rect" : [ 471.0, 211.0, 118.0, 24.0 ],
 					"text" : "metro 4000"
 				}
 
@@ -156,12 +162,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-10",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 98.0, 272.0, 46.0, 40.0 ],
+					"patching_rect" : [ 471.0, 248.0, 96.0, 24.0 ],
 					"text" : "cycle 2"
 				}
 
@@ -173,7 +178,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 457.0, 361.0, 150.0, 24.0 ],
+					"patching_rect" : [ 863.0, 302.0, 199.0, 24.0 ],
 					"text" : "43337 253 253 16"
 				}
 
@@ -181,12 +186,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-8",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 5,
 					"numoutlets" : 5,
 					"outlettype" : [ "bang", "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 455.0, 285.0, 64.0, 40.0 ],
+					"patching_rect" : [ 863.0, 200.0, 116.0, 24.0 ],
 					"text" : "sel 0 1 2 3"
 				}
 
@@ -194,12 +198,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-2",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 455.0, 253.0, 48.0, 40.0 ],
+					"patching_rect" : [ 863.0, 168.0, 97.0, 24.0 ],
 					"text" : "r toHue"
 				}
 
@@ -207,12 +210,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-6",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 292.0, 169.0, 44.0, 40.0 ],
+					"patching_rect" : [ 669.0, 126.0, 93.0, 24.0 ],
 					"text" : "sel 0 1"
 				}
 
@@ -220,12 +222,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-25",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 292.0, 119.0, 75.0, 55.0 ],
+					"patching_rect" : [ 669.0, 95.0, 164.0, 24.0 ],
 					"text" : "r piActivated"
 				}
 
@@ -233,12 +234,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 11.0, 347.0, 67.0, 40.0 ],
+					"patching_rect" : [ -32.0, 326.0, 116.0, 24.0 ],
 					"text" : "delay 5000"
 				}
 
@@ -246,12 +246,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-4",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 11.0, 268.0, 58.0, 40.0 ],
+					"patching_rect" : [ -32.0, 279.0, 107.0, 24.0 ],
 					"text" : "loadbang"
 				}
 
@@ -259,7 +258,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -350,10 +348,10 @@
 									"patching_rect" : [ 283.0, 105.0, 20.0, 140.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_type" : 0,
 											"parameter_longname" : "slider[5]",
 											"parameter_mmax" : 99.0,
-											"parameter_shortname" : "slider",
-											"parameter_type" : 0
+											"parameter_shortname" : "slider"
 										}
 
 									}
@@ -434,10 +432,10 @@
 									"patching_rect" : [ 150.0, 100.0, 20.0, 140.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_type" : 0,
 											"parameter_longname" : "slider[6]",
 											"parameter_mmax" : 253.0,
-											"parameter_shortname" : "slider[3]",
-											"parameter_type" : 0
+											"parameter_shortname" : "slider[3]"
 										}
 
 									}
@@ -458,10 +456,10 @@
 									"patching_rect" : [ 95.0, 100.0, 20.0, 140.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_type" : 0,
 											"parameter_longname" : "slider[7]",
 											"parameter_mmax" : 253.0,
-											"parameter_shortname" : "slider[2]",
-											"parameter_type" : 0
+											"parameter_shortname" : "slider[2]"
 										}
 
 									}
@@ -506,10 +504,10 @@
 									"patching_rect" : [ 50.0, 100.0, 20.0, 140.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_type" : 0,
 											"parameter_longname" : "slider[8]",
 											"parameter_mmax" : 65534.0,
-											"parameter_shortname" : "slider[1]",
-											"parameter_type" : 0
+											"parameter_shortname" : "slider[1]"
 										}
 
 									}
@@ -637,7 +635,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 309.5, 403.808502197265625, 66.0, 55.0 ],
+					"patching_rect" : [ 540.5, 412.808502197265625, 115.0, 24.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -652,7 +650,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-1",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
@@ -786,10 +783,10 @@
 													"patching_rect" : [ 494.0, 100.0, 20.0, 140.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
+															"parameter_type" : 0,
 															"parameter_longname" : "slider",
 															"parameter_mmax" : 99.0,
-															"parameter_shortname" : "slider",
-															"parameter_type" : 0
+															"parameter_shortname" : "slider"
 														}
 
 													}
@@ -870,10 +867,10 @@
 													"patching_rect" : [ 638.0, 177.166656494140625, 20.0, 140.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
+															"parameter_type" : 0,
 															"parameter_longname" : "slider[3]",
 															"parameter_mmax" : 253.0,
-															"parameter_shortname" : "slider[3]",
-															"parameter_type" : 0
+															"parameter_shortname" : "slider[3]"
 														}
 
 													}
@@ -894,10 +891,10 @@
 													"patching_rect" : [ 583.0, 177.166656494140625, 20.0, 140.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
+															"parameter_type" : 0,
 															"parameter_longname" : "slider[2]",
 															"parameter_mmax" : 253.0,
-															"parameter_shortname" : "slider[2]",
-															"parameter_type" : 0
+															"parameter_shortname" : "slider[2]"
 														}
 
 													}
@@ -1086,10 +1083,10 @@
 													"patching_rect" : [ 538.0, 177.166656494140625, 20.0, 140.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
+															"parameter_type" : 0,
 															"parameter_longname" : "slider[1]",
 															"parameter_mmax" : 65534.0,
-															"parameter_shortname" : "slider[1]",
-															"parameter_type" : 0
+															"parameter_shortname" : "slider[1]"
 														}
 
 													}
@@ -2044,7 +2041,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 674.68084716796875, 440.361663818359375, 54.0, 40.0 ],
+					"patching_rect" : [ 895.68084716796875, 502.361663818359375, 103.0, 24.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2059,12 +2056,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-33",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 333.0, 326.0, 99.0, 40.0 ],
+					"patching_rect" : [ 706.0, 302.0, 148.0, 24.0 ],
 					"text" : "44293 255 60 10"
 				}
 
@@ -2072,12 +2068,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-24",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 213.0, 326.0, 105.0, 40.0 ],
+					"patching_rect" : [ 586.0, 302.0, 155.0, 24.0 ],
 					"text" : "38333 200 202 40"
 				}
 
@@ -2085,12 +2080,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-20",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 98.0, 326.0, 105.0, 40.0 ],
+					"patching_rect" : [ 471.0, 302.0, 155.0, 24.0 ],
 					"text" : "38333 100 202 40"
 				}
 
@@ -2098,12 +2092,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-81",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 205.0, 449.0, 77.0, 55.0 ],
+					"patching_rect" : [ 330.0, 449.0, 126.0, 24.0 ],
 					"text" : "r toHueNode"
 				}
 
@@ -2111,51 +2104,23 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-31",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 305.0, 481.0, 155.0, 40.0 ],
+					"patching_rect" : [ 471.0, 449.0, 204.0, 24.0 ],
 					"text" : "roomChange 2 $1 $2 $3 $4"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-42",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 142.5, 400.425506591796875, 32.0, 40.0 ],
-					"text" : "off 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-23",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 61.0, 395.425506591796875, 32.0, 40.0 ],
-					"text" : "on 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-28",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 134.0, 449.0, 65.0, 40.0 ],
+					"patching_rect" : [ 192.0, 449.0, 114.0, 24.0 ],
 					"text" : "script stop"
 				}
 
@@ -2163,12 +2128,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-12",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 61.0, 449.0, 66.0, 40.0 ],
+					"patching_rect" : [ 61.0, 449.0, 115.0, 24.0 ],
 					"text" : "script start"
 				}
 
@@ -2187,7 +2151,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 217.0, 551.31915283203125, 400.0, 220.0 ],
+					"patching_rect" : [ 266.0, 548.31915283203125, 401.0, 220.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 17.0, 65.31915283203125, 400.0, 220.0 ],
 					"viewvisibility" : 1
@@ -2197,12 +2161,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-7",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 61.0, 493.0, 175.0, 40.0 ],
+					"patching_rect" : [ 61.0, 493.0, 224.0, 24.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
@@ -2247,6 +2210,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-14", 0 ]
 				}
@@ -2255,6 +2225,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
+					"midpoints" : [ 934.5, 261.0, 599.5, 261.0, 599.5, 200.0, 480.5, 200.0 ],
 					"source" : [ "obj-15", 1 ]
 				}
 
@@ -2262,14 +2233,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-182", 0 ],
-					"order" : 1,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
 					"order" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
@@ -2277,7 +2240,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"order" : 1,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
+					"midpoints" : [ 777.5, 204.0, 480.5, 204.0 ],
 					"source" : [ "obj-16", 1 ]
 				}
 
@@ -2292,6 +2264,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
+					"midpoints" : [ 1090.5, 387.0, 480.5, 387.0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -2299,7 +2272,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
+					"midpoints" : [ 1266.180908203125, 387.0, 480.5, 387.0 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"midpoints" : [ 1441.180908203125, 387.0, 480.5, 387.0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -2313,20 +2295,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
+					"midpoints" : [ 480.5, 387.0, 480.5, 387.0 ],
 					"source" : [ "obj-20", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
+					"midpoints" : [ 595.5, 387.0, 480.5, 387.0 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -2362,6 +2339,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
+					"midpoints" : [ 872.5, 387.0, 480.5, 387.0 ],
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -2369,6 +2347,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
+					"midpoints" : [ 715.5, 387.0, 480.5, 387.0 ],
 					"source" : [ "obj-33", 0 ]
 				}
 
@@ -2382,13 +2361,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
@@ -2397,6 +2369,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
+					"midpoints" : [ 678.5, 163.5, 480.5, 163.5 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -2425,6 +2398,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
+					"midpoints" : [ 896.75, 227.5, 1090.5, 227.5 ],
 					"source" : [ "obj-8", 1 ]
 				}
 
@@ -2432,6 +2406,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
+					"midpoints" : [ 921.0, 228.5, 1266.180908203125, 228.5 ],
 					"source" : [ "obj-8", 2 ]
 				}
 
@@ -2439,6 +2414,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
+					"midpoints" : [ 945.25, 227.5, 1441.180908203125, 227.5 ],
 					"source" : [ "obj-8", 3 ]
 				}
 
@@ -2452,14 +2428,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-3::obj-64" : [ "slider[7]", "slider[2]", 0 ],
-			"obj-1::obj-70::obj-115" : [ "slider[3]", "slider[3]", 0 ],
-			"obj-1::obj-70::obj-77" : [ "slider[1]", "slider[1]", 0 ],
-			"obj-3::obj-69" : [ "slider[8]", "slider[1]", 0 ],
-			"obj-1::obj-70::obj-122" : [ "slider", "slider", 0 ],
 			"obj-1::obj-70::obj-114" : [ "slider[2]", "slider[2]", 0 ],
 			"obj-3::obj-53" : [ "slider[5]", "slider", 0 ],
+			"obj-1::obj-70::obj-115" : [ "slider[3]", "slider[3]", 0 ],
+			"obj-1::obj-70::obj-122" : [ "slider", "slider", 0 ],
+			"obj-1::obj-70::obj-77" : [ "slider[1]", "slider[1]", 0 ],
+			"obj-3::obj-69" : [ "slider[8]", "slider[1]", 0 ],
 			"obj-3::obj-62" : [ "slider[6]", "slider[3]", 0 ],
+			"obj-3::obj-64" : [ "slider[7]", "slider[2]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2517,11 +2493,11 @@
 		"styles" : [ 			{
 				"name" : "blueNight",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2530,10 +2506,10 @@
 , 			{
 				"name" : "blueNight-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2542,11 +2518,11 @@
 , 			{
 				"name" : "blueNight-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2555,10 +2531,10 @@
 , 			{
 				"name" : "blueNight-1-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2567,11 +2543,11 @@
 , 			{
 				"name" : "blueNight-1-1-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2580,10 +2556,10 @@
 , 			{
 				"name" : "blueNight-1-1-1-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2592,11 +2568,11 @@
 , 			{
 				"name" : "blueNight-1-1-1-1-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2605,10 +2581,10 @@
 , 			{
 				"name" : "blueNight-1-1-1-1-1-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2617,10 +2593,10 @@
 , 			{
 				"name" : "blueNight-1-1-1-1-1-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2629,11 +2605,11 @@
 , 			{
 				"name" : "blueNight-1-1-1-1-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2642,10 +2618,10 @@
 , 			{
 				"name" : "blueNight-1-1-1-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2654,10 +2630,10 @@
 , 			{
 				"name" : "blueNight-1-1-1-1-3",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2666,10 +2642,10 @@
 , 			{
 				"name" : "blueNight-1-1-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2678,10 +2654,10 @@
 , 			{
 				"name" : "blueNight-1-1-1-3",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2690,11 +2666,11 @@
 , 			{
 				"name" : "blueNight-1-1-1-4",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2703,10 +2679,10 @@
 , 			{
 				"name" : "blueNight-1-1-1-4-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2715,10 +2691,10 @@
 , 			{
 				"name" : "blueNight-1-1-1-4-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2727,11 +2703,11 @@
 , 			{
 				"name" : "blueNight-1-1-1-5",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2740,10 +2716,10 @@
 , 			{
 				"name" : "blueNight-1-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2752,10 +2728,10 @@
 , 			{
 				"name" : "blueNight-1-1-3",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2764,11 +2740,11 @@
 , 			{
 				"name" : "blueNight-1-1-3-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2777,10 +2753,10 @@
 , 			{
 				"name" : "blueNight-1-1-3-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2789,11 +2765,11 @@
 , 			{
 				"name" : "blueNight-1-1-3-1-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2802,11 +2778,11 @@
 , 			{
 				"name" : "blueNight-1-1-3-1-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2815,10 +2791,10 @@
 , 			{
 				"name" : "blueNight-1-1-3-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2827,11 +2803,11 @@
 , 			{
 				"name" : "blueNight-1-1-3-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2840,11 +2816,11 @@
 , 			{
 				"name" : "blueNight-1-1-3-3",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2853,11 +2829,11 @@
 , 			{
 				"name" : "blueNight-1-1-4",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2866,10 +2842,10 @@
 , 			{
 				"name" : "blueNight-1-1-5",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2878,11 +2854,11 @@
 , 			{
 				"name" : "blueNight-1-1-5-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2891,11 +2867,11 @@
 , 			{
 				"name" : "blueNight-1-1-5-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2904,10 +2880,10 @@
 , 			{
 				"name" : "blueNight-1-1-6",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2916,11 +2892,11 @@
 , 			{
 				"name" : "blueNight-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2929,10 +2905,10 @@
 , 			{
 				"name" : "blueNight-1-2-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2941,11 +2917,11 @@
 , 			{
 				"name" : "blueNight-1-2-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2954,10 +2930,10 @@
 , 			{
 				"name" : "blueNight-1-2-1-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2966,11 +2942,11 @@
 , 			{
 				"name" : "blueNight-1-2-1-1-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2979,11 +2955,11 @@
 , 			{
 				"name" : "blueNight-1-2-1-1-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2992,10 +2968,10 @@
 , 			{
 				"name" : "blueNight-1-2-1-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3004,11 +2980,11 @@
 , 			{
 				"name" : "blueNight-1-2-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3017,11 +2993,11 @@
 , 			{
 				"name" : "blueNight-1-2-1-3",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3030,11 +3006,11 @@
 , 			{
 				"name" : "blueNight-1-2-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3043,11 +3019,11 @@
 , 			{
 				"name" : "blueNight-1-2-3",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3056,10 +3032,10 @@
 , 			{
 				"name" : "blueNight-1-2-4",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3068,11 +3044,11 @@
 , 			{
 				"name" : "blueNight-1-2-4-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3081,11 +3057,11 @@
 , 			{
 				"name" : "blueNight-1-2-4-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3094,10 +3070,10 @@
 , 			{
 				"name" : "blueNight-1-2-5",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3106,11 +3082,11 @@
 , 			{
 				"name" : "blueNight-1-3",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3119,10 +3095,10 @@
 , 			{
 				"name" : "blueNight-1-3-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3131,11 +3107,11 @@
 , 			{
 				"name" : "blueNight-1-3-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3144,10 +3120,10 @@
 , 			{
 				"name" : "blueNight-1-3-1-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3156,10 +3132,10 @@
 , 			{
 				"name" : "blueNight-1-3-1-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3168,11 +3144,11 @@
 , 			{
 				"name" : "blueNight-1-3-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3181,10 +3157,10 @@
 , 			{
 				"name" : "blueNight-1-3-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3193,10 +3169,10 @@
 , 			{
 				"name" : "blueNight-1-3-3",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3205,10 +3181,10 @@
 , 			{
 				"name" : "blueNight-1-4",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3217,11 +3193,11 @@
 , 			{
 				"name" : "blueNight-1-5",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3230,10 +3206,10 @@
 , 			{
 				"name" : "blueNight-1-5-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3242,10 +3218,10 @@
 , 			{
 				"name" : "blueNight-1-5-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3254,11 +3230,11 @@
 , 			{
 				"name" : "blueNight-1-6",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3267,10 +3243,10 @@
 , 			{
 				"name" : "blueNight-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3279,11 +3255,11 @@
 , 			{
 				"name" : "blueNight-2-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3292,10 +3268,10 @@
 , 			{
 				"name" : "blueNight-2-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3304,11 +3280,11 @@
 , 			{
 				"name" : "blueNight-2-1-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3317,10 +3293,10 @@
 , 			{
 				"name" : "blueNight-2-1-1-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3329,10 +3305,10 @@
 , 			{
 				"name" : "blueNight-2-1-1-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3341,11 +3317,11 @@
 , 			{
 				"name" : "blueNight-2-1-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3354,10 +3330,10 @@
 , 			{
 				"name" : "blueNight-2-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3366,10 +3342,10 @@
 , 			{
 				"name" : "blueNight-2-1-3",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3378,10 +3354,10 @@
 , 			{
 				"name" : "blueNight-2-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3390,10 +3366,10 @@
 , 			{
 				"name" : "blueNight-2-3",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3402,11 +3378,11 @@
 , 			{
 				"name" : "blueNight-2-4",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3415,10 +3391,10 @@
 , 			{
 				"name" : "blueNight-2-4-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3427,10 +3403,10 @@
 , 			{
 				"name" : "blueNight-2-4-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3439,11 +3415,11 @@
 , 			{
 				"name" : "blueNight-2-5",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3452,10 +3428,10 @@
 , 			{
 				"name" : "blueNight-3",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3464,10 +3440,10 @@
 , 			{
 				"name" : "blueNight-4",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3476,11 +3452,11 @@
 , 			{
 				"name" : "blueNight-4-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3489,10 +3465,10 @@
 , 			{
 				"name" : "blueNight-4-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3501,11 +3477,11 @@
 , 			{
 				"name" : "blueNight-4-1-1-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3514,11 +3490,11 @@
 , 			{
 				"name" : "blueNight-4-1-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3527,10 +3503,10 @@
 , 			{
 				"name" : "blueNight-4-1-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3539,11 +3515,11 @@
 , 			{
 				"name" : "blueNight-4-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3552,11 +3528,11 @@
 , 			{
 				"name" : "blueNight-4-3",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3565,11 +3541,11 @@
 , 			{
 				"name" : "blueNight-5",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3578,10 +3554,10 @@
 , 			{
 				"name" : "blueNight-6",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3590,11 +3566,11 @@
 , 			{
 				"name" : "blueNight-6-1",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3603,11 +3579,11 @@
 , 			{
 				"name" : "blueNight-6-2",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3616,10 +3592,10 @@
 , 			{
 				"name" : "blueNight-7",
 				"default" : 				{
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ]
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3628,13 +3604,9 @@
 , 			{
 				"name" : "solarized?",
 				"default" : 				{
-					"fontname" : [ "Arial" ],
-					"locked_bgcolor" : [ 0.046158168464899, 0.128987193107605, 0.161438345909119, 1.0 ],
-					"accentcolor" : [ 0.079000525176525, 0.389900922775269, 0.349255114793777, 1.0 ],
 					"bgcolor" : [ 0.054901960784314, 0.247058823529412, 0.447058823529412, 1.0 ],
-					"textcolor" : [ 0.800000071525574, 0.800000071525574, 0.799999952316284, 1.0 ],
-					"color" : [ 0.815686274509804, 0.827450980392157, 0.188235294117647, 1.0 ],
 					"textcolor_inverse" : [ 0.995808362960815, 0.800102710723877, 0.399984955787659, 1.0 ],
+					"fontname" : [ "Arial" ],
 					"patchlinecolor" : [ 0.999996185302734, 0.99993908405304, 0.041033305227757, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -3646,7 +3618,11 @@
 						"autogradient" : 0.0
 					}
 ,
-					"editing_bgcolor" : [ 0.04340959712863, 0.172110125422478, 0.21745640039444, 1.0 ]
+					"accentcolor" : [ 0.079000525176525, 0.389900922775269, 0.349255114793777, 1.0 ],
+					"color" : [ 0.815686274509804, 0.827450980392157, 0.188235294117647, 1.0 ],
+					"textcolor" : [ 0.800000071525574, 0.800000071525574, 0.799999952316284, 1.0 ],
+					"editing_bgcolor" : [ 0.04340959712863, 0.172110125422478, 0.21745640039444, 1.0 ],
+					"locked_bgcolor" : [ 0.046158168464899, 0.128987193107605, 0.161438345909119, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

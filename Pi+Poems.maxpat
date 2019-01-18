@@ -40,6 +40,35 @@
 		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 723.0, 331.0, 226.0, 35.0 ],
+					"text" : "\"MAIN:/Users/rentaltwo/Documents/Max 8/JohnMedia/poems/\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autopopulate" : 1,
+					"depth" : 1,
+					"id" : "obj-14",
+					"items" : "<empty>",
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 858.0, 236.0, 100.0, 22.0 ],
+					"prefix" : "MAIN:/Users/rentaltwo/Documents/Max 8/JohnMedia/poems/"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 14.0,
 					"id" : "obj-12",
@@ -440,17 +469,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 642.0, 465.0, 84.0, 20.0 ],
-					"text" : "Fix directory"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -594,7 +612,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 418.0, 337.0, 24.0, 24.0 ]
+					"patching_rect" : [ 418.0, 327.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -605,8 +623,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 418.0, 406.0, 383.0, 22.0 ],
-					"text" : "sprintf download http://192.168.1.175:4000/NEWpoem.jpg poem%i.jpg"
+					"patching_rect" : [ 418.0, 406.0, 369.0, 22.0 ],
+					"text" : "sprintf download http://10.32.71.83:4000/NEWpoem.jpg poem%i.jpg"
 				}
 
 			}
@@ -653,8 +671,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 418.0, 489.0, 538.0, 22.0 ],
-					"text" : "jit.uldl @defaultdir \"Macintosh HD:/Users/John/Desktop/KL_Installation_Work/PiNode/savedPoems\""
+					"patching_rect" : [ 418.0, 489.0, 441.0, 22.0 ],
+					"text" : "jit.uldl @defaultdir \"MAIN:/Users/rentaltwo/Documents/Max 8/JohnMedia/poems/\""
 				}
 
 			}
