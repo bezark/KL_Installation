@@ -15,7 +15,7 @@ const audioFolder = __dirname + "/audio";
 let voiceBankIndex = 0;
 let voiceBankName = "default";
 
-let voiceBankIsFree = new Array(6);
+let voiceBankIsFree = new Array(2);
 for (let i = 0; i < voiceBankIsFree.length; i++) {
     voiceBankIsFree[i] = true;
 }
@@ -33,7 +33,7 @@ Max.addHandler("init", (string) => {
 
 });
 
-Max.addHandler("reset", ()=>{
+Max.addHandler("reset", () => {
 
     for (let i = 0; i < voiceBankIsFree.length; i++) {
         voiceBankIsFree[i] = true;
@@ -49,6 +49,16 @@ Max.addHandler("say", (string) => {
         strClean = strClean.substring(0, 128);
     }
 
+    if (!strClean.replace(/\s/g, '').length) {
+        console.log('string only contains whitespace (ie. spaces, tabs or line breaks)');
+
+
+
+    } else if (strClean == "") {
+
+        strClean == "um";
+
+    }
 
     let tempFreeVoice = findFreeVoice();
 
@@ -59,7 +69,7 @@ Max.addHandler("say", (string) => {
         say.export(strClean, "Alex", 1.2, audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav", (err) => {
 
             if (err != null) {
-                console.log(err);
+                console.error(err);
             } else {
                 Max.post("file written to " + audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav");
 
@@ -86,7 +96,11 @@ Max.addHandler("state", (num) => {
 
     let tempNum = parseInt(num);
 
-    voiceBankIsFree[tempNum] = true;
+    setTimeout(() => {
+        voiceBankIsFree[tempNum] = true;
+    }, 4000)
+
+
 
 })
 
