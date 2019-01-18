@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 607.0, 409.0, 972.0, 647.0 ],
+		"rect" : [ 3927.0, 73.0, 972.0, 647.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -45,8 +45,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 483.0, 28.0, 31.0, 22.0 ],
-					"text" : "stop"
+					"patching_rect" : [ 483.0, 28.0, 63.0, 22.0 ],
+					"text" : "script stop"
 				}
 
 			}
@@ -158,7 +158,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -166,36 +166,36 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
+			"obj-9::obj-76::obj-68" : [ "horizontal[2]", "horizontal", 0 ],
+			"obj-5::obj-1::obj-70::obj-115" : [ "slider[3]", "slider[3]", 0 ],
+			"obj-9::obj-39::obj-37" : [ "vertical[4]", "vertical", 0 ],
 			"obj-9::obj-128::obj-24" : [ "range[3]", "range", 0 ],
-			"obj-5::obj-1::obj-70::obj-114" : [ "slider[2]", "slider[2]", 0 ],
+			"obj-5::obj-3::obj-69" : [ "slider[8]", "slider[1]", 0 ],
+			"obj-9::obj-76::obj-37" : [ "vertical[2]", "vertical", 0 ],
+			"obj-5::obj-3::obj-62" : [ "slider[6]", "slider[3]", 0 ],
+			"obj-5::obj-1::obj-70::obj-77" : [ "slider[1]", "slider[1]", 0 ],
+			"obj-9::obj-39::obj-24" : [ "range[2]", "range", 0 ],
+			"obj-9::obj-128::obj-68" : [ "horizontal[5]", "horizontal", 0 ],
 			"obj-9::obj-39::obj-68" : [ "horizontal[4]", "horizontal", 0 ],
-			"obj-5::obj-3::obj-53" : [ "slider[5]", "slider", 0 ],
+			"obj-9::obj-128::obj-37" : [ "vertical[5]", "vertical", 0 ],
+			"obj-9::obj-76::obj-33" : [ "pictctrl[67]", "pictctrl[1]", 0 ],
+			"obj-5::obj-1::obj-70::obj-114" : [ "slider[2]", "slider[2]", 0 ],
+			"obj-9::obj-39::obj-33" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-9::obj-76::obj-24" : [ "range[23]", "range", 0 ],
 			"obj-9::obj-128::obj-39" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
 			"obj-9::obj-76::obj-39" : [ "pictctrl[68]", "pictctrl[1]", 0 ],
-			"obj-9::obj-128::obj-68" : [ "horizontal[5]", "horizontal", 0 ],
-			"obj-5::obj-1::obj-70::obj-115" : [ "slider[3]", "slider[3]", 0 ],
-			"obj-9::obj-76::obj-24" : [ "range[23]", "range", 0 ],
 			"obj-5::obj-1::obj-70::obj-122" : [ "slider", "slider", 0 ],
-			"obj-9::obj-39::obj-24" : [ "range[2]", "range", 0 ],
-			"obj-9::obj-76::obj-68" : [ "horizontal[2]", "horizontal", 0 ],
-			"obj-9::obj-39::obj-33" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
-			"obj-9::obj-128::obj-37" : [ "vertical[5]", "vertical", 0 ],
-			"obj-9::obj-39::obj-39" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-5::obj-1::obj-70::obj-77" : [ "slider[1]", "slider[1]", 0 ],
-			"obj-9::obj-39::obj-37" : [ "vertical[4]", "vertical", 0 ],
-			"obj-9::obj-76::obj-37" : [ "vertical[2]", "vertical", 0 ],
-			"obj-5::obj-3::obj-69" : [ "slider[8]", "slider[1]", 0 ],
-			"obj-9::obj-128::obj-33" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-9::obj-76::obj-33" : [ "pictctrl[67]", "pictctrl[1]", 0 ],
-			"obj-5::obj-3::obj-62" : [ "slider[6]", "slider[3]", 0 ],
+			"obj-5::obj-3::obj-53" : [ "slider[5]", "slider", 0 ],
 			"obj-5::obj-3::obj-64" : [ "slider[7]", "slider[2]", 0 ],
+			"obj-9::obj-128::obj-33" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
+			"obj-9::obj-39::obj-39" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -210,6 +210,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "hue.js",
+				"bootpath" : "~/Documents/GitHub/KL_Installation/hue",
+				"patcherrelativepath" : "./hue",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "n4m.monitor.maxpat",
 				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
 				"type" : "JSON",
@@ -217,6 +224,12 @@
 			}
 , 			{
 				"name" : "resize_n4m_monitor_patcher.js",
+				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node For Max/patchers/debug-monitor",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -233,6 +246,13 @@
 				"bootpath" : "~/Documents/GitHub/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "serverMax.js",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -296,10 +316,10 @@
 		"styles" : [ 			{
 				"name" : "blueNight",
 				"default" : 				{
-					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
