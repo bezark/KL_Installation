@@ -75,14 +75,38 @@ Max.addHandler("nextSecond", () => {
 
         // maxOutput = removeDuplicates(maxOutput);
 
+        maxOutput = maxOutput.filter((x) => {
+
+            if (!x.replace(/\s/g, '').length) {
+                    // console.log('string only contains whitespace (ie. spaces, tabs or line breaks)');
+        
+                    return false;
+        
+                } else {
+                    return true;
+                }
+            
+        });
+
 
         // Max.post(maxOutput);
 
         counter.add(1, 's');
 
         // Max.post(maxOutput);
-        if (maxOutput.length) {
+
+        // console.log(maxOutput);
+
+        // if (!maxOutput.replace(/\s/g, '').length) {
+        //     console.log('string only contains whitespace (ie. spaces, tabs or line breaks)');
+
+
+
+        // }
+        if (maxOutput.length != 0) {
             Max.outlet(maxOutput);
+        } else {
+            Max.post("MAXOUPUT WAS WHITESPACE");
         }
 
     } else {
