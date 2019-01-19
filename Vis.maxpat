@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 3874.0, 56.0, 859.0, 678.0 ],
+		"rect" : [ 3874.0, 56.0, 1298.0, 678.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -303,7 +303,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1606.0, 1189.0, 67.0, 22.0 ],
+					"patching_rect" : [ 1601.0, 1186.0, 67.0, 22.0 ],
 					"text" : "s thankYou"
 				}
 
@@ -954,7 +954,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 197.0, 100.0, 65.0, 22.0 ],
+									"patching_rect" : [ 197.0, 17.0, 65.0, 22.0 ],
 									"text" : "r thankYou"
 								}
 
@@ -2404,14 +2404,9 @@
 , 							{
 								"name" : "Johnstyle",
 								"default" : 								{
-									"elementcolor" : [ 0.45098, 0.513725, 0.521569, 1.0 ],
-									"fontface" : [ 0 ],
-									"clearcolor" : [ 0.952941, 0.564706, 0.098039, 0.0 ],
-									"selectioncolor" : [ 0.870588, 0.415686, 0.062745, 1.0 ],
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textjustification" : [ 1 ],
-									"patchlinecolor" : [ 0.702269, 0.811747, 0.303388, 0.9 ],
+									"color" : [ 0.454959, 0.684788, 0.824976, 1.0 ],
 									"fontsize" : [ 12.0 ],
+									"patchlinecolor" : [ 0.702269, 0.811747, 0.303388, 0.9 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2422,10 +2417,15 @@
 										"autogradient" : 0
 									}
 ,
-									"color" : [ 0.454959, 0.684788, 0.824976, 1.0 ],
-									"accentcolor" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
+									"textjustification" : [ 1 ],
 									"fontname" : [ "Monaco" ],
-									"bgcolor" : [ 0.374196, 0.439327, 0.446685, 0.8 ]
+									"accentcolor" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
+									"bgcolor" : [ 0.374196, 0.439327, 0.446685, 0.8 ],
+									"elementcolor" : [ 0.45098, 0.513725, 0.521569, 1.0 ],
+									"fontface" : [ 0 ],
+									"clearcolor" : [ 0.952941, 0.564706, 0.098039, 0.0 ],
+									"selectioncolor" : [ 0.870588, 0.415686, 0.062745, 1.0 ],
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2434,10 +2434,10 @@
 , 							{
 								"name" : "blueNight",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 									"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-									"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
+									"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
+									"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2446,7 +2446,6 @@
 , 							{
 								"name" : "blueNight-1",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"patchlinecolor" : [ 0.670588, 0.74902, 0.807843, 0.9 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -2459,7 +2458,8 @@
 									}
 ,
 									"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-									"bgcolor" : [ 0.216117, 0.201759, 0.20698, 1.0 ]
+									"bgcolor" : [ 0.216117, 0.201759, 0.20698, 1.0 ],
+									"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2468,9 +2468,9 @@
 , 							{
 								"name" : "brown",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.682353, 0.705882, 0.776471, 1.0 ],
 									"accentcolor" : [ 0.380952, 0.332597, 0.304988, 1.0 ],
-									"bgcolor" : [ 0.221674, 0.25681, 0.29304, 1.0 ]
+									"bgcolor" : [ 0.221674, 0.25681, 0.29304, 1.0 ],
+									"textcolor_inverse" : [ 0.682353, 0.705882, 0.776471, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2480,8 +2480,8 @@
 								"name" : "helpfile_label-1",
 								"default" : 								{
 									"fontsize" : [ 13.0 ],
-									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2504,9 +2504,7 @@
 , 							{
 								"name" : "minimal",
 								"default" : 								{
-									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 0.44 ],
-									"selectioncolor" : [ 0.862745, 0.741176, 0.137255, 0.7 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"color" : [ 0.345098, 0.513725, 0.572549, 0.78 ],
 									"patchlinecolor" : [ 0.65, 0.65, 0.65, 0.9 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -2518,9 +2516,11 @@
 										"autogradient" : 0
 									}
 ,
-									"color" : [ 0.345098, 0.513725, 0.572549, 0.78 ],
 									"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ]
+									"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
+									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 0.44 ],
+									"selectioncolor" : [ 0.862745, 0.741176, 0.137255, 0.7 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3210,14 +3210,9 @@
 , 							{
 								"name" : "Johnstyle",
 								"default" : 								{
-									"elementcolor" : [ 0.45098, 0.513725, 0.521569, 1.0 ],
-									"fontface" : [ 0 ],
-									"clearcolor" : [ 0.952941, 0.564706, 0.098039, 0.0 ],
-									"selectioncolor" : [ 0.870588, 0.415686, 0.062745, 1.0 ],
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textjustification" : [ 1 ],
-									"patchlinecolor" : [ 0.702269, 0.811747, 0.303388, 0.9 ],
+									"color" : [ 0.454959, 0.684788, 0.824976, 1.0 ],
 									"fontsize" : [ 12.0 ],
+									"patchlinecolor" : [ 0.702269, 0.811747, 0.303388, 0.9 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -3228,10 +3223,15 @@
 										"autogradient" : 0
 									}
 ,
-									"color" : [ 0.454959, 0.684788, 0.824976, 1.0 ],
-									"accentcolor" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
+									"textjustification" : [ 1 ],
 									"fontname" : [ "Monaco" ],
-									"bgcolor" : [ 0.374196, 0.439327, 0.446685, 0.8 ]
+									"accentcolor" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
+									"bgcolor" : [ 0.374196, 0.439327, 0.446685, 0.8 ],
+									"elementcolor" : [ 0.45098, 0.513725, 0.521569, 1.0 ],
+									"fontface" : [ 0 ],
+									"clearcolor" : [ 0.952941, 0.564706, 0.098039, 0.0 ],
+									"selectioncolor" : [ 0.870588, 0.415686, 0.062745, 1.0 ],
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3240,10 +3240,10 @@
 , 							{
 								"name" : "blueNight",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 									"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-									"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
+									"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
+									"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3252,7 +3252,6 @@
 , 							{
 								"name" : "blueNight-1",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"patchlinecolor" : [ 0.670588, 0.74902, 0.807843, 0.9 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -3265,7 +3264,8 @@
 									}
 ,
 									"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-									"bgcolor" : [ 0.216117, 0.201759, 0.20698, 1.0 ]
+									"bgcolor" : [ 0.216117, 0.201759, 0.20698, 1.0 ],
+									"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3274,9 +3274,9 @@
 , 							{
 								"name" : "brown",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.682353, 0.705882, 0.776471, 1.0 ],
 									"accentcolor" : [ 0.380952, 0.332597, 0.304988, 1.0 ],
-									"bgcolor" : [ 0.221674, 0.25681, 0.29304, 1.0 ]
+									"bgcolor" : [ 0.221674, 0.25681, 0.29304, 1.0 ],
+									"textcolor_inverse" : [ 0.682353, 0.705882, 0.776471, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3286,8 +3286,8 @@
 								"name" : "helpfile_label-1",
 								"default" : 								{
 									"fontsize" : [ 13.0 ],
-									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-									"fontname" : [ "Arial" ]
+									"fontname" : [ "Arial" ],
+									"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3310,9 +3310,7 @@
 , 							{
 								"name" : "minimal",
 								"default" : 								{
-									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 0.44 ],
-									"selectioncolor" : [ 0.862745, 0.741176, 0.137255, 0.7 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"color" : [ 0.345098, 0.513725, 0.572549, 0.78 ],
 									"patchlinecolor" : [ 0.65, 0.65, 0.65, 0.9 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -3324,9 +3322,11 @@
 										"autogradient" : 0
 									}
 ,
-									"color" : [ 0.345098, 0.513725, 0.572549, 0.78 ],
 									"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ]
+									"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
+									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 0.44 ],
+									"selectioncolor" : [ 0.862745, 0.741176, 0.137255, 0.7 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -9363,17 +9363,17 @@
 			"obj-39::obj-39" : [ "pictctrl[2]", "pictctrl[1]", 0 ],
 			"obj-76::obj-68" : [ "horizontal[2]", "horizontal", 0 ],
 			"obj-128::obj-33" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-128::obj-68" : [ "horizontal[4]", "horizontal", 0 ],
+			"obj-128::obj-24" : [ "range[2]", "range", 0 ],
 			"obj-76::obj-37" : [ "vertical[2]", "vertical", 0 ],
 			"obj-39::obj-37" : [ "vertical[3]", "vertical", 0 ],
+			"obj-128::obj-39" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-128::obj-68" : [ "horizontal[4]", "horizontal", 0 ],
 			"obj-76::obj-33" : [ "pictctrl[67]", "pictctrl[1]", 0 ],
-			"obj-128::obj-37" : [ "vertical[4]", "vertical", 0 ],
+			"obj-39::obj-24" : [ "range[1]", "range", 0 ],
 			"obj-39::obj-68" : [ "horizontal[3]", "horizontal", 0 ],
-			"obj-128::obj-24" : [ "range[2]", "range", 0 ],
+			"obj-128::obj-37" : [ "vertical[4]", "vertical", 0 ],
 			"obj-39::obj-33" : [ "pictctrl[1]", "pictctrl[1]", 0 ],
 			"obj-76::obj-39" : [ "pictctrl[68]", "pictctrl[1]", 0 ],
-			"obj-39::obj-24" : [ "range[1]", "range", 0 ],
-			"obj-128::obj-39" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
 			"obj-76::obj-24" : [ "range[23]", "range", 0 ],
 			"parameterbanks" : 			{
 
@@ -9474,14 +9474,9 @@
 , 			{
 				"name" : "Johnstyle",
 				"default" : 				{
-					"elementcolor" : [ 0.45098, 0.513725, 0.521569, 1.0 ],
-					"fontface" : [ 0 ],
-					"clearcolor" : [ 0.952941, 0.564706, 0.098039, 0.0 ],
-					"selectioncolor" : [ 0.870588, 0.415686, 0.062745, 1.0 ],
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textjustification" : [ 1 ],
-					"patchlinecolor" : [ 0.702269, 0.811747, 0.303388, 0.9 ],
+					"color" : [ 0.454959, 0.684788, 0.824976, 1.0 ],
 					"fontsize" : [ 12.0 ],
+					"patchlinecolor" : [ 0.702269, 0.811747, 0.303388, 0.9 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -9492,10 +9487,15 @@
 						"autogradient" : 0
 					}
 ,
-					"color" : [ 0.454959, 0.684788, 0.824976, 1.0 ],
-					"accentcolor" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
+					"textjustification" : [ 1 ],
 					"fontname" : [ "Monaco" ],
-					"bgcolor" : [ 0.374196, 0.439327, 0.446685, 0.8 ]
+					"accentcolor" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
+					"bgcolor" : [ 0.374196, 0.439327, 0.446685, 0.8 ],
+					"elementcolor" : [ 0.45098, 0.513725, 0.521569, 1.0 ],
+					"fontface" : [ 0 ],
+					"clearcolor" : [ 0.952941, 0.564706, 0.098039, 0.0 ],
+					"selectioncolor" : [ 0.870588, 0.415686, 0.062745, 1.0 ],
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -9504,10 +9504,10 @@
 , 			{
 				"name" : "blueNight",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
+					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -9516,7 +9516,6 @@
 , 			{
 				"name" : "blueNight-1",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.670588, 0.74902, 0.807843, 0.9 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -9529,7 +9528,8 @@
 					}
 ,
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"bgcolor" : [ 0.216117, 0.201759, 0.20698, 1.0 ]
+					"bgcolor" : [ 0.216117, 0.201759, 0.20698, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -9538,9 +9538,9 @@
 , 			{
 				"name" : "brown",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.682353, 0.705882, 0.776471, 1.0 ],
 					"accentcolor" : [ 0.380952, 0.332597, 0.304988, 1.0 ],
-					"bgcolor" : [ 0.221674, 0.25681, 0.29304, 1.0 ]
+					"bgcolor" : [ 0.221674, 0.25681, 0.29304, 1.0 ],
+					"textcolor_inverse" : [ 0.682353, 0.705882, 0.776471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -9550,8 +9550,8 @@
 				"name" : "helpfile_label-1",
 				"default" : 				{
 					"fontsize" : [ 13.0 ],
-					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ],
-					"fontname" : [ "Arial" ]
+					"fontname" : [ "Arial" ],
+					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -9574,9 +9574,7 @@
 , 			{
 				"name" : "minimal",
 				"default" : 				{
-					"elementcolor" : [ 0.32549, 0.345098, 0.372549, 0.44 ],
-					"selectioncolor" : [ 0.862745, 0.741176, 0.137255, 0.7 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"color" : [ 0.345098, 0.513725, 0.572549, 0.78 ],
 					"patchlinecolor" : [ 0.65, 0.65, 0.65, 0.9 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -9588,9 +9586,11 @@
 						"autogradient" : 0
 					}
 ,
-					"color" : [ 0.345098, 0.513725, 0.572549, 0.78 ],
 					"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-					"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ]
+					"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
+					"elementcolor" : [ 0.32549, 0.345098, 0.372549, 0.44 ],
+					"selectioncolor" : [ 0.862745, 0.741176, 0.137255, 0.7 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
