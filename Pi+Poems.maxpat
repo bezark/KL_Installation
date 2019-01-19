@@ -40,6 +40,29 @@
 		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 307.5, 245.0, 72.0, 22.0 ],
+					"text" : "s wave_cue"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 307.5, 214.0, 75.0, 22.0 ],
+					"text" : "r piActivated"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -67,7 +90,7 @@
 					"autopopulate" : 1,
 					"depth" : 1,
 					"id" : "obj-14",
-					"items" : [ "poem0.jpg", ",", "poem1.jpg" ],
+					"items" : [ "poem0.jpg", ",", "poem1.jpg", ",", "poem2.jpg", ",", "poem3.jpg", ",", "poem4.jpg", ",", "poem5.jpg", ",", "poem6.jpg", ",", "poem7.jpg" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -750,6 +773,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
