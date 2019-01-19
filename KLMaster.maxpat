@@ -199,7 +199,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "hue.maxpat",
-					"numinlets" : 1,
+					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 483.0, 61.5, 415.0, 302.5 ],
@@ -273,7 +273,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"order" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
@@ -313,16 +313,23 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "hue.maxpat",
-				"bootpath" : "~/Documents/GitHub/KL_Installation/hue",
-				"patcherrelativepath" : "./hue",
+				"name" : "Pi+Poems.maxpat",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "hue.js",
-				"bootpath" : "~/Documents/GitHub/KL_Installation/hue",
-				"patcherrelativepath" : "./hue",
+				"name" : "WikiScraper.maxpat",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "serverMax.js",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -345,29 +352,8 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Pi+Poems.maxpat",
-				"bootpath" : "~/Documents/GitHub/KL_Installation",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "WikiScraper.maxpat",
-				"bootpath" : "~/Documents/GitHub/KL_Installation",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "serverMax.js",
-				"bootpath" : "~/Documents/GitHub/KL_Installation",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "Vis.maxpat",
-				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -417,13 +403,13 @@
 , 			{
 				"name" : "brcosa.genjit",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "duotone.genjit",
-				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "gJIT",
 				"implicit" : 1
@@ -437,21 +423,35 @@
 			}
 , 			{
 				"name" : "audio.maxpat",
-				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio.js",
-				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "voiceBoi.maxpat",
-				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Poly Vocoder.amxd.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "audio-synth.maxpat",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
