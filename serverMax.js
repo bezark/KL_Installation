@@ -106,7 +106,7 @@ Max.addHandler("nextSecond", () => {
         if (maxOutput.length != 0) {
             Max.outlet(maxOutput);
         } else {
-            Max.post("MAXOUPUT WAS WHITESPACE");
+           // Max.post("MAXOUPUT WAS WHITESPACE");
         }
 
     } else {
