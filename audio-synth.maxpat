@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-50",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 706.0, 69.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-48",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -566,7 +577,7 @@
 					"numoutlets" : 4,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 453.0, 401.3333740234375, 403.0, 196.0 ],
+					"patching_rect" : [ 453.0, 389.0, 403.0, 196.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -611,7 +622,7 @@
 									"67_feedback" : 66.0,
 									"filter_cutoff" : 20000.0,
 									"live.toggle" : 1.0,
-									"wet_dry" : 97.0
+									"wet_dry" : 100.0
 								}
 
 							}
@@ -648,7 +659,7 @@
 												"67_feedback" : 66.0,
 												"filter_cutoff" : 20000.0,
 												"live.toggle" : 1.0,
-												"wet_dry" : 97.0
+												"wet_dry" : 100.0
 											}
 
 										}
@@ -738,7 +749,7 @@
 									"Spread" : 50.0,
 									"Pattern" : 0.0,
 									"blob" : 									{
-										"Chord" : [ 42, 80, 55, 80, 59, 80, 64, 80, 66, 80, 67, 80, 70, 80, 73, 80, 74, 80, 77, 80 ],
+										"Chord" : [ 41, 80, 66, 80, 68, 80, 73, 80, 75, 80 ],
 										"Storage" : [ 											{
 												"pattrstorage" : 												{
 													"name" : "u953001153",
@@ -798,7 +809,7 @@
 												"Spread" : 50.0,
 												"Pattern" : 0.0,
 												"blob" : 												{
-													"Chord" : [ 42, 80, 55, 80, 59, 80, 64, 80, 66, 80, 67, 80, 70, 80, 73, 80, 74, 80, 77, 80 ],
+													"Chord" : [ 41, 80, 66, 80, 68, 80, 73, 80, 75, 80 ],
 													"Storage" : [ 														{
 															"pattrstorage" : 															{
 																"name" : "u953001153",
@@ -932,7 +943,7 @@
 									"Spread" : 100.0,
 									"Pattern" : 0.0,
 									"blob" : 									{
-										"Chord" : [ 42, 80, 55, 80, 59, 80, 64, 80, 66, 80, 67, 80, 70, 80, 73, 80, 74, 80, 77, 80 ],
+										"Chord" : [ 41, 80, 66, 80, 68, 80, 73, 80, 75, 80 ],
 										"Storage" : [ 											{
 												"pattrstorage" : 												{
 													"name" : "u091000433",
@@ -1000,7 +1011,7 @@
 												"Spread" : 100.0,
 												"Pattern" : 0.0,
 												"blob" : 												{
-													"Chord" : [ 42, 80, 55, 80, 59, 80, 64, 80, 66, 80, 67, 80, 70, 80, 73, 80, 74, 80, 77, 80 ],
+													"Chord" : [ 41, 80, 66, 80, 68, 80, 73, 80, 75, 80 ],
 													"Storage" : [ 														{
 															"pattrstorage" : 															{
 																"name" : "u091000433",
@@ -1520,6 +1531,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"midpoints" : [ 1084.5, 161.166671752929688, 1146.5, 161.166671752929688 ],
+					"order" : 0,
+					"source" : [ "obj-44", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 1,
 					"source" : [ "obj-44", 1 ]
 				}
 
