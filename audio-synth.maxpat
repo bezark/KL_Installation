@@ -39,12 +39,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-50",
-					"maxclass" : "newobj",
+					"id" : "obj-53",
+					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 706.0, 69.0, 100.0, 22.0 ]
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 983.0, 160.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1062.0, 75.66668701171875, 74.0, 22.0 ],
+					"text" : "delay 10000"
 				}
 
 			}
@@ -430,7 +443,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1062.0, 92.0, 58.0, 22.0 ],
+					"patching_rect" : [ 1062.0, 30.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -749,7 +762,7 @@
 									"Spread" : 50.0,
 									"Pattern" : 0.0,
 									"blob" : 									{
-										"Chord" : [ 41, 80, 66, 80, 68, 80, 73, 80, 75, 80 ],
+										"Chord" : [ 60, 80, 64, 80, 65, 80, 69, 80, 74, 80 ],
 										"Storage" : [ 											{
 												"pattrstorage" : 												{
 													"name" : "u953001153",
@@ -809,7 +822,7 @@
 												"Spread" : 50.0,
 												"Pattern" : 0.0,
 												"blob" : 												{
-													"Chord" : [ 41, 80, 66, 80, 68, 80, 73, 80, 75, 80 ],
+													"Chord" : [ 60, 80, 64, 80, 65, 80, 69, 80, 74, 80 ],
 													"Storage" : [ 														{
 															"pattrstorage" : 															{
 																"name" : "u953001153",
@@ -943,7 +956,7 @@
 									"Spread" : 100.0,
 									"Pattern" : 0.0,
 									"blob" : 									{
-										"Chord" : [ 41, 80, 66, 80, 68, 80, 73, 80, 75, 80 ],
+										"Chord" : [ 60, 80, 64, 80, 65, 80, 69, 80, 74, 80 ],
 										"Storage" : [ 											{
 												"pattrstorage" : 												{
 													"name" : "u091000433",
@@ -1011,7 +1024,7 @@
 												"Spread" : 100.0,
 												"Pattern" : 0.0,
 												"blob" : 												{
-													"Chord" : [ 41, 80, 66, 80, 68, 80, 73, 80, 75, 80 ],
+													"Chord" : [ 60, 80, 64, 80, 65, 80, 69, 80, 74, 80 ],
 													"Storage" : [ 														{
 															"pattrstorage" : 															{
 																"name" : "u091000433",
@@ -1086,7 +1099,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1062.0, 285.0, 62.0, 22.0 ],
+					"patching_rect" : [ 1062.0, 291.0, 62.0, 22.0 ],
 					"text" : "midiflush"
 				}
 
@@ -1501,7 +1514,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
+					"destination" : [ "obj-37", 0 ],
+					"order" : 0,
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"order" : 1,
+					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"order" : 2,
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -1531,15 +1561,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-41", 0 ],
 					"midpoints" : [ 1084.5, 161.166671752929688, 1146.5, 161.166671752929688 ],
-					"order" : 0,
-					"source" : [ "obj-44", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"order" : 1,
 					"source" : [ "obj-44", 1 ]
 				}
 
@@ -1594,17 +1615,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 2 ],
-					"order" : 0,
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 2 ],
-					"order" : 1,
-					"source" : [ "obj-5", 0 ]
+					"destination" : [ "obj-44", 0 ],
+					"source" : [ "obj-49", 0 ]
 				}
 
 			}
@@ -1612,6 +1624,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-53", 0 ]
 				}
 
 			}
