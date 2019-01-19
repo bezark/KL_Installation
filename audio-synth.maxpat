@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 244.5, 588.3333740234375, 67.0, 22.0 ],
+					"text" : "delay 4000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 249.5, 542.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-46",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -714,7 +738,7 @@
 									"Spread" : 50.0,
 									"Pattern" : 0.0,
 									"blob" : 									{
-										"Chord" : [ 42, 80, 66, 80, 70, 80, 73, 80, 77, 80 ],
+										"Chord" : [ 42, 80, 55, 80, 59, 80, 64, 80, 66, 80, 67, 80, 70, 80, 73, 80, 74, 80, 77, 80 ],
 										"Storage" : [ 											{
 												"pattrstorage" : 												{
 													"name" : "u953001153",
@@ -774,7 +798,7 @@
 												"Spread" : 50.0,
 												"Pattern" : 0.0,
 												"blob" : 												{
-													"Chord" : [ 42, 80, 66, 80, 70, 80, 73, 80, 77, 80 ],
+													"Chord" : [ 42, 80, 55, 80, 59, 80, 64, 80, 66, 80, 67, 80, 70, 80, 73, 80, 74, 80, 77, 80 ],
 													"Storage" : [ 														{
 															"pattrstorage" : 															{
 																"name" : "u953001153",
@@ -908,7 +932,7 @@
 									"Spread" : 100.0,
 									"Pattern" : 0.0,
 									"blob" : 									{
-										"Chord" : [ 42, 80, 66, 80, 70, 80, 73, 80, 77, 80 ],
+										"Chord" : [ 42, 80, 55, 80, 59, 80, 64, 80, 66, 80, 67, 80, 70, 80, 73, 80, 74, 80, 77, 80 ],
 										"Storage" : [ 											{
 												"pattrstorage" : 												{
 													"name" : "u091000433",
@@ -976,7 +1000,7 @@
 												"Spread" : 100.0,
 												"Pattern" : 0.0,
 												"blob" : 												{
-													"Chord" : [ 42, 80, 66, 80, 70, 80, 73, 80, 77, 80 ],
+													"Chord" : [ 42, 80, 55, 80, 59, 80, 64, 80, 66, 80, 67, 80, 70, 80, 73, 80, 74, 80, 77, 80 ],
 													"Storage" : [ 														{
 															"pattrstorage" : 															{
 																"name" : "u091000433",
@@ -1444,6 +1468,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-40", 0 ]
 				}
@@ -1531,6 +1562,13 @@
 					"destination" : [ "obj-51", 0 ],
 					"order" : 1,
 					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
