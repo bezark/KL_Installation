@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 4527.0, 269.0, 559.0, 439.0 ],
+		"rect" : [ 3874.0, 56.0, 859.0, 678.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,40 @@
 		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "dict.view",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 505.0, 455.698394775390625, 274.333343505859375, 403.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 505.0, 423.39678955078125, 83.0, 22.0 ],
+					"text" : "route success"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 505.0, 388.7935791015625, 115.0, 22.0 ],
+					"text" : "route processStatus"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-30",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -47,7 +81,7 @@
 					"patching_rect" : [ 240.0, 275.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 218.0, 259.208648681640625, 54.0, 33.0 ],
+					"presentation_rect" : [ 218.0, 259.208648681640625, 56.0, 33.0 ],
 					"text" : "Deletion Print"
 				}
 
@@ -83,7 +117,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 442.0, 474.0, 236.0, 20.0 ],
+					"patching_rect" : [ 489.0, 100.0, 236.0, 20.0 ],
 					"text" : " Rental Mac IP: 10.32.71.234."
 				}
 
@@ -441,7 +475,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 437.0, 196.208648681640625, 400.0, 220.0 ],
+					"patching_rect" : [ 457.0, 142.208648681640625, 400.0, 220.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 21.0, 36.208648681640625, 400.0, 220.0 ],
 					"viewvisibility" : 1
@@ -627,6 +661,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-36", 0 ]
 				}
 
 			}
