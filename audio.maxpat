@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 271.0, 79.0, 565.0, 784.0 ],
+		"rect" : [ 1183.0, 292.0, 565.0, 506.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,18 @@
 		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 383.0, 132.5, 67.0, 22.0 ],
+					"text" : "delay 2000"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -55,6 +67,7 @@
 					"patching_rect" : [ 337.0, 470.0, 216.0, 332.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 501.0, 70.0, 216.0, 332.0 ],
+					"varname" : "audio-synth",
 					"viewvisibility" : 1
 				}
 
@@ -434,7 +447,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 356.0, 129.0, 64.0, 22.0 ],
+					"patching_rect" : [ 383.0, 170.0, 64.0, 22.0 ],
 					"text" : "script start"
 				}
 
@@ -448,14 +461,14 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 129.0, 310.0, 184.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"autostart" : 1,
+						"autostart" : 0,
 						"defer" : 0,
 						"node" : "",
 						"npm" : "",
 						"watch" : 0
 					}
 ,
-					"text" : "node.script audio.js @autostart 1"
+					"text" : "node.script audio.js @autostart 0"
 				}
 
 			}
@@ -807,7 +820,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"order" : 0,
 					"source" : [ "obj-21", 0 ]
 				}
@@ -838,6 +851,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -939,11 +959,11 @@
  ],
 		"parameters" : 		{
 			"obj-7::obj-29" : [ "amxd~", "amxd~", 0 ],
-			"obj-7::obj-18" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-8::obj-13" : [ "amxd~[2]", "amxd~", 0 ],
 			"obj-7::obj-31" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
-			"obj-7::obj-2" : [ "amxd~[3]", "amxd~[1]", 0 ],
 			"obj-5::obj-13" : [ "amxd~[1]", "amxd~", 0 ],
+			"obj-8::obj-13" : [ "amxd~[2]", "amxd~", 0 ],
+			"obj-7::obj-2" : [ "amxd~[3]", "amxd~[1]", 0 ],
+			"obj-7::obj-18" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-7::obj-11" : [ "amxd~[4]", "amxd~[2]", 0 ],
 			"parameterbanks" : 			{
 
@@ -953,7 +973,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "audio.js",
-				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -978,7 +998,7 @@
 			}
 , 			{
 				"name" : "voiceBoi.maxpat",
-				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -986,13 +1006,13 @@
 , 			{
 				"name" : "Poly Vocoder.amxd.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio-synth.maxpat",
-				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1000,7 +1020,7 @@
 , 			{
 				"name" : "ChamberVerb.amxd.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
