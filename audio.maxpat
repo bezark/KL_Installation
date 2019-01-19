@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 3874.0, 56.0, 856.0, 678.0 ],
+		"rect" : [ 271.0, 79.0, 565.0, 784.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,27 @@
 		"subpatcher_template" : "",
 		"showontab" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-7",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "audio-synth.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 337.0, 470.0, 216.0, 332.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 501.0, 70.0, 216.0, 332.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 14.0,
@@ -139,17 +160,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 246.0, 260.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 172.0, 751.0, 55.0, 22.0 ],
-					"text" : "dac~ 1 2"
 				}
 
 			}
@@ -268,7 +278,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 337.0, 459.0, 256.0, 150.0 ],
+					"patching_rect" : [ 30.0, 667.0, 256.0, 150.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 247.0, 321.0, 242.0, 130.0 ],
 					"varname" : "voiceBoi[1]",
@@ -293,7 +303,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 67.0, 459.0, 256.0, 150.0 ],
+					"patching_rect" : [ 23.0, 493.0, 256.0, 150.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 321.0, 230.0, 130.0 ],
 					"varname" : "voiceBoi",
@@ -736,6 +746,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
+					"midpoints" : [ 138.5, 480.0, 32.5, 480.0 ],
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -743,6 +754,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
+					"midpoints" : [ 151.333333333333343, 480.0, 9.0, 480.0, 9.0, 654.0, 39.5, 654.0 ],
 					"source" : [ "obj-18", 1 ]
 				}
 
@@ -890,6 +902,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
+					"midpoints" : [ 32.5, 654.0, 324.0, 654.0, 324.0, 465.0, 346.5, 465.0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -911,6 +924,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
+					"midpoints" : [ 39.5, 828.0, 324.0, 828.0, 324.0, 456.0, 543.5, 456.0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -924,8 +938,13 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-7::obj-29" : [ "amxd~", "amxd~", 0 ],
+			"obj-7::obj-18" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-8::obj-13" : [ "amxd~[2]", "amxd~", 0 ],
+			"obj-7::obj-31" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
+			"obj-7::obj-2" : [ "amxd~[3]", "amxd~[1]", 0 ],
 			"obj-5::obj-13" : [ "amxd~[1]", "amxd~", 0 ],
+			"obj-7::obj-11" : [ "amxd~[4]", "amxd~[2]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -934,7 +953,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "audio.js",
-				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -959,9 +978,30 @@
 			}
 , 			{
 				"name" : "voiceBoi.maxpat",
-				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Poly Vocoder.amxd.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "audio-synth.maxpat",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ChamberVerb.amxd.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
 				"implicit" : 1
 			}
  ],

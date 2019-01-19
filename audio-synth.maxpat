@@ -12,7 +12,7 @@
 		"classnamespace" : "box",
 		"rect" : [ 117.0, 79.0, 955.0, 737.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -375,7 +375,7 @@
 									"Spread" : 50.0,
 									"Pattern" : 0.0,
 									"blob" : 									{
-										"Chord" : [ 60, 80, 64, 80, 65, 80, 69, 80, 74, 80 ],
+										"Chord" : [ 59, 80, 60, 80, 62, 80, 64, 80, 65, 80, 67, 80, 69, 80, 74, 80 ],
 										"Storage" : [ 											{
 												"pattrstorage" : 												{
 													"name" : "u953001153",
@@ -435,7 +435,7 @@
 												"Spread" : 50.0,
 												"Pattern" : 0.0,
 												"blob" : 												{
-													"Chord" : [ 60, 80, 64, 80, 65, 80, 69, 80, 74, 80 ],
+													"Chord" : [ 59, 80, 60, 80, 62, 80, 64, 80, 65, 80, 67, 80, 69, 80, 74, 80 ],
 													"Storage" : [ 														{
 															"pattrstorage" : 															{
 																"name" : "u953001153",
@@ -564,12 +564,12 @@
 									"Latency" : 1.0,
 									"PreGain" : 0.0,
 									"Quality" : 0.0,
-									"Shift" : 1200.0,
+									"Shift" : 0.0,
 									"SibilanceThreshold" : 100.0,
 									"Spread" : 100.0,
 									"Pattern" : 0.0,
 									"blob" : 									{
-										"Chord" : [ 60, 80, 64, 80, 65, 80, 69, 80, 74, 80 ],
+										"Chord" : [ 59, 80, 60, 80, 62, 80, 64, 80, 65, 80, 67, 80, 69, 80, 74, 80 ],
 										"Storage" : [ 											{
 												"pattrstorage" : 												{
 													"name" : "u091000433",
@@ -632,12 +632,12 @@
 												"Latency" : 1.0,
 												"PreGain" : 0.0,
 												"Quality" : 0.0,
-												"Shift" : 1200.0,
+												"Shift" : 0.0,
 												"SibilanceThreshold" : 100.0,
 												"Spread" : 100.0,
 												"Pattern" : 0.0,
 												"blob" : 												{
-													"Chord" : [ 60, 80, 64, 80, 65, 80, 69, 80, 74, 80 ],
+													"Chord" : [ 59, 80, 60, 80, 62, 80, 64, 80, 65, 80, 67, 80, 69, 80, 74, 80 ],
 													"Storage" : [ 														{
 															"pattrstorage" : 															{
 																"name" : "u091000433",
