@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 3874.0, 56.0, 859.0, 678.0 ],
+		"rect" : [ 3874.0, 56.0, 1298.0, 678.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,41 @@
 		"subpatcher_template" : "",
 		"showontab" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 958.0, 381.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 824.0, 234.0, 100.0, 20.0 ],
+					"text" : "Paper changed"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 860.0, 339.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
@@ -173,7 +208,7 @@
 					"autopopulate" : 1,
 					"depth" : 1,
 					"id" : "obj-14",
-					"items" : [ "poem0.jpg", ",", "poem1.jpg", ",", "poem10.jpg", ",", "poem2.jpg", ",", "poem3.jpg", ",", "poem4.jpg", ",", "poem5.jpg", ",", "poem6.jpg", ",", "poem7.jpg", ",", "poem8.jpg", ",", "poem9.jpg" ],
+					"items" : [ "poem0.jpg", ",", "poem1.jpg", ",", "poem10.jpg", ",", "poem11.jpg", ",", "poem2.jpg", ",", "poem3.jpg", ",", "poem4.jpg", ",", "poem5.jpg", ",", "poem6.jpg", ",", "poem7.jpg", ",", "poem8.jpg", ",", "poem9.jpg" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
