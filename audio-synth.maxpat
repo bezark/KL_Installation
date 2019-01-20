@@ -752,25 +752,33 @@
 									"CorrectionAmount" : 100.0,
 									"CorrectionThreshold" : 0.0,
 									"Dry/Wet" : 100.0,
-									"Fade" : 5011.871990064824786,
+									"Fade" : 4881.889763779530767,
 									"Gain" : 0.0,
 									"Latency" : 1.0,
 									"PreGain" : 0.0,
 									"Quality" : 0.0,
 									"Shift" : 0.0,
 									"SibilanceThreshold" : 100.0,
-									"Spread" : 50.0,
+									"Spread" : 100.0,
 									"Pattern" : 0.0,
 									"blob" : 									{
-										"Chord" : [ 60, 80, 64, 80, 65, 80, 69, 80, 74, 80 ],
+										"Chord" : [ -1 ],
 										"Storage" : [ 											{
 												"pattrstorage" : 												{
-													"name" : "u953001153",
+													"name" : "u647008994",
 													"slots" : 													{
 														"2" : 														{
 															"id" : 2,
 															"data" : 															{
-																"Chord" : [ 57, 18, 60, 18, 64, 18, 67, 22 ]
+																"Chord" : [ -1 ]
+															}
+
+														}
+,
+														"3" : 														{
+															"id" : 3,
+															"data" : 															{
+																"Chord" : [ -1 ]
 															}
 
 														}
@@ -790,7 +798,7 @@
 						}
 ,
 						"snapshotlist" : 						{
-							"current_snapshot" : 0,
+							"current_snapshot" : 2,
 							"entries" : [ 								{
 									"filetype" : "C74Snapshot",
 									"version" : 2,
@@ -819,10 +827,10 @@
 												"Quality" : 0.0,
 												"Shift" : 0.0,
 												"SibilanceThreshold" : 100.0,
-												"Spread" : 50.0,
+												"Spread" : 100.0,
 												"Pattern" : 0.0,
 												"blob" : 												{
-													"Chord" : [ 60, 80, 64, 80, 65, 80, 69, 80, 74, 80 ],
+													"Chord" : [ -1 ],
 													"Storage" : [ 														{
 															"pattrstorage" : 															{
 																"name" : "u953001153",
@@ -855,6 +863,99 @@
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
 										"snapshotfileid" : "f2e8f1e612af5dda67f3ba7effbbac7e"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "Poly Vocoder.amxd[1]",
+									"origin" : "Poly Vocoder.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "Poly Vocoder.amxd[1]",
+										"filename" : "Poly Vocoder.amxd[1].maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "cccf26ac8aa63430f9ec64bcff9965a8"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "Poly Vocoder.amxd[2]",
+									"origin" : "Poly Vocoder.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"snapshot" : 									{
+										"name" : "Poly Vocoder.amxd",
+										"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Poly Vocoder.amxd",
+										"valuedictionary" : 										{
+											"parameter_values" : 											{
+												"Bus" : 0.0,
+												"Midi" : 1.0,
+												"AmbienceThreshold" : 0.0,
+												"Atten" : 1.0,
+												"CorrectionAmount" : 100.0,
+												"CorrectionThreshold" : 0.0,
+												"Dry/Wet" : 100.0,
+												"Fade" : 4881.889763779530767,
+												"Gain" : 0.0,
+												"Latency" : 1.0,
+												"PreGain" : 0.0,
+												"Quality" : 0.0,
+												"Shift" : 0.0,
+												"SibilanceThreshold" : 100.0,
+												"Spread" : 100.0,
+												"Pattern" : 0.0,
+												"blob" : 												{
+													"Chord" : [ -1 ],
+													"Storage" : [ 														{
+															"pattrstorage" : 															{
+																"name" : "u647008994",
+																"slots" : 																{
+																	"2" : 																	{
+																		"id" : 2,
+																		"data" : 																		{
+																			"Chord" : [ -1 ]
+																		}
+
+																	}
+,
+																	"3" : 																	{
+																		"id" : 3,
+																		"data" : 																		{
+																			"Chord" : [ -1 ]
+																		}
+
+																	}
+
+																}
+
+															}
+
+														}
+ ]
+												}
+
+											}
+
+										}
+
+									}
+,
+									"fileref" : 									{
+										"name" : "Poly Vocoder.amxd[2]",
+										"filename" : "Poly Vocoder.amxd[2].maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "2b886e92a6a606e8e67fb8b37bd23f3d"
 									}
 
 								}
@@ -956,7 +1057,7 @@
 									"Spread" : 100.0,
 									"Pattern" : 0.0,
 									"blob" : 									{
-										"Chord" : [ 60, 80, 64, 80, 65, 80, 69, 80, 74, 80 ],
+										"Chord" : [ -1 ],
 										"Storage" : [ 											{
 												"pattrstorage" : 												{
 													"name" : "u091000433",
@@ -992,7 +1093,7 @@
 						}
 ,
 						"snapshotlist" : 						{
-							"current_snapshot" : 0,
+							"current_snapshot" : 2,
 							"entries" : [ 								{
 									"filetype" : "C74Snapshot",
 									"version" : 2,
@@ -1065,6 +1166,156 @@
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
 										"snapshotfileid" : "f2e8f1e612af5dda67f3ba7effbbac7e"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "Poly Vocoder.amxd[1]",
+									"origin" : "Poly Vocoder.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"snapshot" : 									{
+										"name" : "Poly Vocoder.amxd",
+										"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Poly Vocoder.amxd",
+										"valuedictionary" : 										{
+											"parameter_values" : 											{
+												"Bus" : 0.0,
+												"Midi" : 1.0,
+												"AmbienceThreshold" : 0.0,
+												"Atten" : 1.0,
+												"CorrectionAmount" : 100.0,
+												"CorrectionThreshold" : 0.0,
+												"Dry/Wet" : 100.0,
+												"Fade" : 4881.889763779530767,
+												"Gain" : 0.0,
+												"Latency" : 1.0,
+												"PreGain" : 0.0,
+												"Quality" : 0.0,
+												"Shift" : 0.0,
+												"SibilanceThreshold" : 100.0,
+												"Spread" : 100.0,
+												"Pattern" : 0.0,
+												"blob" : 												{
+													"Chord" : [ 60, 80, 64, 80, 65, 80, 69, 80, 74, 80 ],
+													"Storage" : [ 														{
+															"pattrstorage" : 															{
+																"name" : "u091000433",
+																"slots" : 																{
+																	"2" : 																	{
+																		"id" : 2,
+																		"data" : 																		{
+																			"Chord" : [ -1 ]
+																		}
+
+																	}
+,
+																	"3" : 																	{
+																		"id" : 3,
+																		"data" : 																		{
+																			"Chord" : [ -1 ]
+																		}
+
+																	}
+
+																}
+
+															}
+
+														}
+ ]
+												}
+
+											}
+
+										}
+
+									}
+,
+									"fileref" : 									{
+										"name" : "Poly Vocoder.amxd[1]",
+										"filename" : "Poly Vocoder.amxd[1].maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "cccf26ac8aa63430f9ec64bcff9965a8"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "Poly Vocoder.amxd[2]",
+									"origin" : "Poly Vocoder.amxd",
+									"type" : "amxd",
+									"subtype" : "Undefined",
+									"embed" : 0,
+									"snapshot" : 									{
+										"name" : "Poly Vocoder.amxd",
+										"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Poly Vocoder.amxd",
+										"valuedictionary" : 										{
+											"parameter_values" : 											{
+												"Bus" : 0.0,
+												"Midi" : 1.0,
+												"AmbienceThreshold" : 0.0,
+												"Atten" : 1.0,
+												"CorrectionAmount" : 100.0,
+												"CorrectionThreshold" : 0.0,
+												"Dry/Wet" : 100.0,
+												"Fade" : 4881.889763779530767,
+												"Gain" : 0.0,
+												"Latency" : 1.0,
+												"PreGain" : 0.0,
+												"Quality" : 0.0,
+												"Shift" : 0.0,
+												"SibilanceThreshold" : 100.0,
+												"Spread" : 100.0,
+												"Pattern" : 0.0,
+												"blob" : 												{
+													"Chord" : [ -1 ],
+													"Storage" : [ 														{
+															"pattrstorage" : 															{
+																"name" : "u091000433",
+																"slots" : 																{
+																	"2" : 																	{
+																		"id" : 2,
+																		"data" : 																		{
+																			"Chord" : [ -1 ]
+																		}
+
+																	}
+,
+																	"3" : 																	{
+																		"id" : 3,
+																		"data" : 																		{
+																			"Chord" : [ -1 ]
+																		}
+
+																	}
+
+																}
+
+															}
+
+														}
+ ]
+												}
+
+											}
+
+										}
+
+									}
+,
+									"fileref" : 									{
+										"name" : "Poly Vocoder.amxd[2]",
+										"filename" : "Poly Vocoder.amxd[2].maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "2b886e92a6a606e8e67fb8b37bd23f3d"
 									}
 
 								}
@@ -1622,6 +1873,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 2 ],
+					"order" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 2 ],
+					"order" : 1,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-51", 0 ]
 				}
@@ -1677,6 +1944,20 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Poly Vocoder.amxd.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Poly Vocoder.amxd[1].maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Poly Vocoder.amxd[2].maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
 				"type" : "mx@s",
