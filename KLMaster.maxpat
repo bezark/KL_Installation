@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 3874.0, 73.0, 859.0, 651.0 ],
+		"rect" : [ 2135.0, 166.0, 928.0, 651.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -199,7 +199,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "hue.maxpat",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 483.0, 61.5, 415.0, 302.5 ],
@@ -258,14 +258,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"order" : 2,
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
 					"order" : 1,
 					"source" : [ "obj-6", 0 ]
 				}
@@ -281,31 +273,26 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-1::obj-70::obj-114" : [ "slider[2]", "slider[2]", 0 ],
-			"obj-9::obj-76::obj-33" : [ "pictctrl[67]", "pictctrl[1]", 0 ],
-			"obj-9::obj-39::obj-33" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
-			"obj-9::obj-128::obj-33" : [ "pictctrl[7]", "pictctrl[1]", 0 ],
-			"obj-9::obj-39::obj-68" : [ "horizontal[4]", "horizontal", 0 ],
-			"obj-5::obj-3::obj-69" : [ "slider[8]", "slider[1]", 0 ],
-			"obj-9::obj-76::obj-24" : [ "range[23]", "range", 0 ],
-			"obj-4::obj-5::obj-13" : [ "amxd~", "amxd~", 0 ],
-			"obj-9::obj-128::obj-39" : [ "pictctrl[6]", "pictctrl[1]", 0 ],
-			"obj-5::obj-3::obj-62" : [ "slider[6]", "slider[3]", 0 ],
-			"obj-9::obj-76::obj-68" : [ "horizontal[2]", "horizontal", 0 ],
 			"obj-4::obj-8::obj-13" : [ "amxd~[1]", "amxd~", 0 ],
-			"obj-5::obj-1::obj-70::obj-115" : [ "slider[3]", "slider[3]", 0 ],
-			"obj-9::obj-76::obj-39" : [ "pictctrl[68]", "pictctrl[1]", 0 ],
-			"obj-9::obj-128::obj-68" : [ "horizontal[5]", "horizontal", 0 ],
-			"obj-5::obj-3::obj-53" : [ "slider[5]", "slider", 0 ],
-			"obj-5::obj-1::obj-70::obj-122" : [ "slider", "slider", 0 ],
-			"obj-5::obj-1::obj-70::obj-77" : [ "slider[1]", "slider[1]", 0 ],
-			"obj-9::obj-128::obj-37" : [ "vertical[5]", "vertical", 0 ],
-			"obj-9::obj-39::obj-24" : [ "range[2]", "range", 0 ],
-			"obj-5::obj-3::obj-64" : [ "slider[7]", "slider[2]", 0 ],
-			"obj-9::obj-39::obj-39" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
-			"obj-9::obj-76::obj-37" : [ "vertical[2]", "vertical", 0 ],
-			"obj-9::obj-128::obj-24" : [ "range[3]", "range", 0 ],
+			"obj-4::obj-7::obj-31" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
 			"obj-9::obj-39::obj-37" : [ "vertical[4]", "vertical", 0 ],
+			"obj-5::obj-3::obj-53" : [ "slider[5]", "slider", 0 ],
+			"obj-9::obj-39::obj-39" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-5::obj-1::obj-70::obj-114" : [ "slider[2]", "slider[2]", 0 ],
+			"obj-5::obj-3::obj-64" : [ "slider[7]", "slider[2]", 0 ],
+			"obj-4::obj-7::obj-11" : [ "amxd~[3]", "amxd~[2]", 0 ],
+			"obj-4::obj-7::obj-2" : [ "amxd~[4]", "amxd~[1]", 0 ],
+			"obj-9::obj-39::obj-33" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-5::obj-1::obj-70::obj-122" : [ "slider", "slider", 0 ],
+			"obj-4::obj-5::obj-13" : [ "amxd~", "amxd~", 0 ],
+			"obj-5::obj-3::obj-62" : [ "slider[6]", "slider[3]", 0 ],
+			"obj-5::obj-1::obj-70::obj-115" : [ "slider[3]", "slider[3]", 0 ],
+			"obj-9::obj-39::obj-68" : [ "horizontal[4]", "horizontal", 0 ],
+			"obj-4::obj-7::obj-29" : [ "amxd~[2]", "amxd~", 0 ],
+			"obj-5::obj-1::obj-70::obj-77" : [ "slider[1]", "slider[1]", 0 ],
+			"obj-5::obj-3::obj-69" : [ "slider[8]", "slider[1]", 0 ],
+			"obj-9::obj-39::obj-24" : [ "range[2]", "range", 0 ],
+			"obj-4::obj-7::obj-18" : [ "live.gain~", "live.gain~", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -313,23 +300,16 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Pi+Poems.maxpat",
-				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
-				"patcherrelativepath" : ".",
+				"name" : "hue.maxpat",
+				"bootpath" : "~/Documents/GitHub/KL_Installation/hue",
+				"patcherrelativepath" : "./hue",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "WikiScraper.maxpat",
-				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "serverMax.js",
-				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
-				"patcherrelativepath" : ".",
+				"name" : "hue.js",
+				"bootpath" : "~/Documents/GitHub/KL_Installation/hue",
+				"patcherrelativepath" : "./hue",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -352,10 +332,38 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Vis.maxpat",
-				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"name" : "Pi+Poems.maxpat",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "WikiScraper.maxpat",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "serverMax.js",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Vis.maxpat",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "brcosa.genjit",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
+				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
@@ -401,15 +409,8 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "brcosa.genjit",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"patcherrelativepath" : "../../../../../../Library/Application Support/Cycling '74/Max 8/Examples/jitter-examples/gen",
-				"type" : "gJIT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "duotone.genjit",
-				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "gJIT",
 				"implicit" : 1
@@ -423,35 +424,21 @@
 			}
 , 			{
 				"name" : "audio.maxpat",
-				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio.js",
-				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "voiceBoi.maxpat",
-				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Poly Vocoder.amxd.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "audio-synth.maxpat",
-				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -463,15 +450,36 @@
 				"type" : "mx@s",
 				"implicit" : 1
 			}
+, 			{
+				"name" : "audio-synth.maxpat",
+				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ChamberVerb.amxd.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "waves_kl_2019.wav",
+				"bootpath" : "~/Documents/GitHub/KL_Installation/assets-audio",
+				"patcherrelativepath" : "./assets-audio",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "blueNight",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
