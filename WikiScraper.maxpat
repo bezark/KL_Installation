@@ -82,7 +82,8 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 218.0, 259.208648681640625, 56.0, 33.0 ],
-					"text" : "Deletion Print"
+					"text" : "Deletion Print",
+					"textcolor" : [ 0.996078431606293, 0.996078431606293, 0.996078431606293, 1.0 ]
 				}
 
 			}
@@ -240,7 +241,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 276.0, 366.18182373046875, 74.0, 22.0 ],
+					"patching_rect" : [ 276.0, 372.18182373046875, 74.0, 22.0 ],
 					"text" : "delay 10000"
 				}
 
@@ -571,13 +572,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -723,8 +717,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"midpoints" : [ 285.5, 359.590911865234375, 285.5, 359.590911865234375 ],
+					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-51", 0 ]
 				}
 
