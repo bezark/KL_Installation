@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
+		"rect" : [ 62.0, 68.0, 1852.0, 990.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,18 @@
 		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 386.0, -60.0, 65.0, 22.0 ],
+					"text" : "r toCloseB"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -52,7 +64,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 717.0, 506.0, 128.0, 128.0 ],
+					"patching_rect" : [ 971.0, 386.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 526.0, 375.0, 438.0, 330.0 ],
 					"viewvisibility" : 1
@@ -140,7 +152,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 483.0, 4.0, 63.0, 22.0 ],
+					"patching_rect" : [ 476.0, -60.0, 63.0, 22.0 ],
 					"text" : "closebang"
 				}
 
@@ -292,28 +304,35 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-3::obj-64" : [ "slider[7]", "slider[2]", 0 ],
+			"obj-5::obj-1::obj-70::obj-122" : [ "slider", "slider", 0 ],
+			"obj-9::obj-39::obj-37" : [ "vertical[4]", "vertical", 0 ],
 			"obj-5::obj-1::obj-70::obj-77" : [ "slider[1]", "slider[1]", 0 ],
+			"obj-9::obj-39::obj-39" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-9::obj-39::obj-24" : [ "range[2]", "range", 0 ],
+			"obj-5::obj-3::obj-53" : [ "slider[5]", "slider", 0 ],
+			"obj-5::obj-3::obj-62" : [ "slider[6]", "slider[3]", 0 ],
+			"obj-4::obj-5::obj-13" : [ "amxd~", "amxd~", 0 ],
 			"obj-4::obj-7::obj-29" : [ "amxd~[4]", "amxd~", 0 ],
 			"obj-9::obj-39::obj-68" : [ "horizontal[4]", "horizontal", 0 ],
 			"obj-4::obj-7::obj-11" : [ "amxd~[2]", "amxd~[2]", 0 ],
-			"obj-5::obj-3::obj-53" : [ "slider[5]", "slider", 0 ],
 			"obj-4::obj-7::obj-31" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
-			"obj-5::obj-3::obj-62" : [ "slider[6]", "slider[3]", 0 ],
-			"obj-9::obj-39::obj-37" : [ "vertical[4]", "vertical", 0 ],
 			"obj-5::obj-1::obj-70::obj-114" : [ "slider[2]", "slider[2]", 0 ],
-			"obj-5::obj-1::obj-70::obj-122" : [ "slider", "slider", 0 ],
-			"obj-4::obj-5::obj-13" : [ "amxd~", "amxd~", 0 ],
-			"obj-4::obj-8::obj-13" : [ "amxd~[1]", "amxd~", 0 ],
-			"obj-4::obj-7::obj-2" : [ "amxd~[3]", "amxd~[1]", 0 ],
 			"obj-5::obj-3::obj-69" : [ "slider[8]", "slider[1]", 0 ],
-			"obj-9::obj-39::obj-24" : [ "range[2]", "range", 0 ],
-			"obj-4::obj-7::obj-18" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-9::obj-39::obj-33" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-4::obj-7::obj-18" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-4::obj-8::obj-13" : [ "amxd~[1]", "amxd~", 0 ],
 			"obj-5::obj-1::obj-70::obj-115" : [ "slider[3]", "slider[3]", 0 ],
-			"obj-9::obj-39::obj-39" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-4::obj-7::obj-2" : [ "amxd~[3]", "amxd~[1]", 0 ],
+			"obj-5::obj-3::obj-64" : [ "slider[7]", "slider[2]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -465,10 +484,31 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Poly Vocoder.amxd.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "audio-synth.maxpat",
 				"bootpath" : "~/Documents/GitHub/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ChamberVerb.amxd.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "waves_kl_2019.wav",
+				"bootpath" : "~/Documents/GitHub/KL_Installation/assets-audio",
+				"patcherrelativepath" : "./assets-audio",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
@@ -490,10 +530,10 @@
 		"styles" : [ 			{
 				"name" : "blueNight",
 				"default" : 				{
-					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
+					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

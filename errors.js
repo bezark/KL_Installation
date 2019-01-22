@@ -26,12 +26,12 @@ Tclient.messages
     from: '+14243486004',
     body: msg,
   })
-  // Tclient.messages
-  //   .create({
-  //     to: "+17175032678",
-  //     from: '+14243486004',
-  //     body: msg[1],
-  //   })
+   Tclient.messages
+    .create({
+       to: "+17175032678",
+      from: '+14243486004',
+       body: msg,
+   })
   .then((message) => console.log(message.sid));
 
 }
