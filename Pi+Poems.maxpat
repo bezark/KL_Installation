@@ -40,6 +40,41 @@
 		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-46",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 814.0, 402.75, 118.0, 22.0 ],
+					"text" : "prepend /handshake"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 814.0, 432.0, 151.0, 22.0 ],
+					"text" : "udpsend 10.32.71.83 2222"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 814.0, 371.5, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-47",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -413,7 +448,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 732.0, 339.0, 69.0, 22.0 ],
+					"patching_rect" : [ 718.0, 377.0, 69.0, 22.0 ],
 					"text" : "route count"
 				}
 
@@ -425,7 +460,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 651.0, 273.5, 93.0, 22.0 ],
+					"patching_rect" : [ 637.0, 311.5, 93.0, 22.0 ],
 					"text" : "loadmess count"
 				}
 
@@ -441,7 +476,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 651.0, 313.5, 100.0, 22.0 ],
+					"patching_rect" : [ 637.0, 351.5, 100.0, 22.0 ],
 					"prefix" : "MAIN:/Users/rentaltwo/Documents/Max 8/JohnMedia/poems/"
 				}
 
@@ -1011,11 +1046,11 @@
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 418.0, 272.0, 211.0, 22.0 ],
-					"text" : "route /newPoem /piState /lightChange"
+					"numinlets" : 5,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 418.0, 272.0, 446.0, 22.0 ],
+					"text" : "route /newPoem /piState /lightChange /handshake"
 				}
 
 			}
@@ -1118,6 +1153,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"source" : [ "obj-15", 3 ]
 				}
 
 			}
@@ -1313,6 +1355,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-47", 1 ],
 					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-45", 0 ],
+					"source" : [ "obj-46", 0 ]
 				}
 
 			}
