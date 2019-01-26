@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 62.0, 68.0, 1852.0, 990.0 ],
+		"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,23 @@
 		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 764.0, -10.0, 54.0, 22.0 ],
+					"text" : "onecopy"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 386.0, -60.0, 65.0, 22.0 ],
+					"patching_rect" : [ 407.0, -60.0, 65.0, 22.0 ],
 					"text" : "r toCloseB"
 				}
 
@@ -78,7 +89,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1411.0, 129.333343505859375, 83.0, 22.0 ],
+					"patching_rect" : [ 569.0, -10.666656494140625, 83.0, 22.0 ],
 					"text" : "qmetro 10000"
 				}
 
@@ -90,7 +101,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1411.0, 182.0, 117.0, 22.0 ],
+					"patching_rect" : [ 569.0, 24.0, 117.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 105.0, 475.0, 117.0, 22.0 ],
 					"text" : "script processStatus"
@@ -105,7 +116,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1411.0, 74.666671752929688, 24.0, 24.0 ],
+					"patching_rect" : [ 569.0, -65.333328247070312, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 49.0, 465.66668701171875, 49.0, 49.0 ]
 				}
@@ -313,26 +324,26 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5::obj-1::obj-70::obj-122" : [ "slider", "slider", 0 ],
+			"obj-5::obj-3::obj-69" : [ "slider[8]", "slider[1]", 0 ],
+			"obj-4::obj-7::obj-11" : [ "amxd~[2]", "amxd~[2]", 0 ],
+			"obj-4::obj-7::obj-29" : [ "amxd~[4]", "amxd~", 0 ],
 			"obj-9::obj-39::obj-37" : [ "vertical[4]", "vertical", 0 ],
+			"obj-4::obj-7::obj-31" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
+			"obj-5::obj-1::obj-70::obj-122" : [ "slider", "slider", 0 ],
+			"obj-5::obj-1::obj-70::obj-115" : [ "slider[3]", "slider[3]", 0 ],
+			"obj-9::obj-39::obj-68" : [ "horizontal[4]", "horizontal", 0 ],
 			"obj-5::obj-1::obj-70::obj-77" : [ "slider[1]", "slider[1]", 0 ],
 			"obj-9::obj-39::obj-39" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-5::obj-3::obj-64" : [ "slider[7]", "slider[2]", 0 ],
+			"obj-4::obj-7::obj-2" : [ "amxd~[3]", "amxd~[1]", 0 ],
+			"obj-4::obj-8::obj-13" : [ "amxd~[1]", "amxd~", 0 ],
+			"obj-4::obj-7::obj-18" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-9::obj-39::obj-24" : [ "range[2]", "range", 0 ],
 			"obj-5::obj-3::obj-53" : [ "slider[5]", "slider", 0 ],
-			"obj-5::obj-3::obj-62" : [ "slider[6]", "slider[3]", 0 ],
-			"obj-4::obj-5::obj-13" : [ "amxd~", "amxd~", 0 ],
-			"obj-4::obj-7::obj-29" : [ "amxd~[4]", "amxd~", 0 ],
-			"obj-9::obj-39::obj-68" : [ "horizontal[4]", "horizontal", 0 ],
-			"obj-4::obj-7::obj-11" : [ "amxd~[2]", "amxd~[2]", 0 ],
-			"obj-4::obj-7::obj-31" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
 			"obj-5::obj-1::obj-70::obj-114" : [ "slider[2]", "slider[2]", 0 ],
-			"obj-5::obj-3::obj-69" : [ "slider[8]", "slider[1]", 0 ],
+			"obj-5::obj-3::obj-62" : [ "slider[6]", "slider[3]", 0 ],
 			"obj-9::obj-39::obj-33" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
-			"obj-4::obj-7::obj-18" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-4::obj-8::obj-13" : [ "amxd~[1]", "amxd~", 0 ],
-			"obj-5::obj-1::obj-70::obj-115" : [ "slider[3]", "slider[3]", 0 ],
-			"obj-4::obj-7::obj-2" : [ "amxd~[3]", "amxd~[1]", 0 ],
-			"obj-5::obj-3::obj-64" : [ "slider[7]", "slider[2]", 0 ],
+			"obj-4::obj-5::obj-13" : [ "amxd~", "amxd~", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -484,31 +495,10 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Poly Vocoder.amxd.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "audio-synth.maxpat",
 				"bootpath" : "~/Documents/GitHub/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ChamberVerb.amxd.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "waves_kl_2019.wav",
-				"bootpath" : "~/Documents/GitHub/KL_Installation/assets-audio",
-				"patcherrelativepath" : "./assets-audio",
-				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
@@ -530,10 +520,10 @@
 		"styles" : [ 			{
 				"name" : "blueNight",
 				"default" : 				{
-					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
+					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
