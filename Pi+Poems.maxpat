@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 56.0, 1852.0, 1110.0 ],
+		"rect" : [ 34.0, 56.0, 1413.0, 1110.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -79,8 +79,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 814.0, 432.0, 151.0, 22.0 ],
-					"text" : "udpsend 10.32.71.83 2222"
+					"patching_rect" : [ 814.0, 432.0, 148.0, 22.0 ],
+					"text" : "udpsend raspberrypi 2222"
 				}
 
 			}
@@ -482,7 +482,7 @@
 					"autopopulate" : 1,
 					"depth" : 1,
 					"id" : "obj-14",
-					"items" : [ "poem0.jpg", ",", "poem1.jpg", ",", "poem10.jpg", ",", "poem11.jpg", ",", "poem12.jpg", ",", "poem13.jpg", ",", "poem14.jpg", ",", "poem15.jpg", ",", "poem16.jpg", ",", "poem17.jpg", ",", "poem18.jpg", ",", "poem19.jpg", ",", "poem2.jpg", ",", "poem20.jpg", ",", "poem21.jpg", ",", "poem3.jpg", ",", "poem4.jpg", ",", "poem5.jpg", ",", "poem6.jpg", ",", "poem7.jpg", ",", "poem8.jpg", ",", "poem9.jpg" ],
+					"items" : [ "poem0.jpg", ",", "poem1.jpg", ",", "poem10.jpg", ",", "poem100.jpg", ",", "poem101.jpg", ",", "poem102.jpg", ",", "poem103.jpg", ",", "poem104.jpg", ",", "poem105.jpg", ",", "poem106.jpg", ",", "poem107.jpg", ",", "poem108.jpg", ",", "poem109.jpg", ",", "poem11.jpg", ",", "poem110.jpg", ",", "poem111.jpg", ",", "poem112.jpg", ",", "poem113.jpg", ",", "poem114.jpg", ",", "poem115.jpg", ",", "poem12.jpg", ",", "poem13.jpg", ",", "poem14.jpg", ",", "poem15.jpg", ",", "poem16.jpg", ",", "poem17.jpg", ",", "poem18.jpg", ",", "poem19.jpg", ",", "poem2.jpg", ",", "poem20.jpg", ",", "poem21.jpg", ",", "poem22.jpg", ",", "poem23.jpg", ",", "poem24.jpg", ",", "poem25.jpg", ",", "poem26.jpg", ",", "poem27.jpg", ",", "poem28.jpg", ",", "poem29.jpg", ",", "poem3.jpg", ",", "poem30.jpg", ",", "poem31.jpg", ",", "poem32.jpg", ",", "poem33.jpg", ",", "poem34.jpg", ",", "poem35.jpg", ",", "poem36.jpg", ",", "poem37.jpg", ",", "poem38.jpg", ",", "poem39.jpg", ",", "poem4.jpg", ",", "poem40.jpg", ",", "poem41.jpg", ",", "poem42.jpg", ",", "poem43.jpg", ",", "poem44.jpg", ",", "poem45.jpg", ",", "poem46.jpg", ",", "poem47.jpg", ",", "poem48.jpg", ",", "poem49.jpg", ",", "poem5.jpg", ",", "poem50.jpg", ",", "poem51.jpg", ",", "poem52.jpg", ",", "poem53.jpg", ",", "poem54.jpg", ",", "poem55.jpg", ",", "poem56.jpg", ",", "poem57.jpg", ",", "poem58.jpg", ",", "poem59.jpg", ",", "poem6.jpg", ",", "poem60.jpg", ",", "poem61.jpg", ",", "poem62.jpg", ",", "poem63.jpg", ",", "poem64.jpg", ",", "poem65.jpg", ",", "poem66.jpg", ",", "poem67.jpg", ",", "poem68.jpg", ",", "poem69.jpg", ",", "poem7.jpg", ",", "poem70.jpg", ",", "poem71.jpg", ",", "poem72.jpg", ",", "poem73.jpg", ",", "poem74.jpg", ",", "poem75.jpg", ",", "poem76.jpg", ",", "poem77.jpg", ",", "poem78.jpg", ",", "poem79.jpg", ",", "poem8.jpg", ",", "poem80.jpg", ",", "poem81.jpg", ",", "poem82.jpg", ",", "poem83.jpg", ",", "poem84.jpg", ",", "poem85.jpg", ",", "poem86.jpg", ",", "poem87.jpg", ",", "poem88.jpg", ",", "poem89.jpg", ",", "poem9.jpg", ",", "poem90.jpg", ",", "poem91.jpg", ",", "poem92.jpg", ",", "poem93.jpg", ",", "poem94.jpg", ",", "poem95.jpg", ",", "poem96.jpg", ",", "poem97.jpg", ",", "poem98.jpg", ",", "poem99.jpg" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -594,17 +594,6 @@
 					"outlettype" : [ "", "int", "int" ],
 					"patching_rect" : [ 478.5, 303.0, 48.0, 22.0 ],
 					"text" : "change"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 745.0, 664.0, 150.0, 20.0 ],
-					"text" : "10.32.71.165."
 				}
 
 			}
@@ -1013,8 +1002,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 247.0, 644.0, 151.0, 22.0 ],
-					"text" : "udpsend 10.32.71.83 3333"
+					"patching_rect" : [ 247.0, 644.0, 148.0, 22.0 ],
+					"text" : "udpsend raspberrypi 3333"
 				}
 
 			}
@@ -1073,7 +1062,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 418.0, 86.0, 97.0, 22.0 ],
+					"patching_rect" : [ 418.0, 72.0, 97.0, 22.0 ],
 					"text" : "udpreceive 2221"
 				}
 
@@ -1419,8 +1408,8 @@
 				"name" : "blueNight",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1444,8 +1433,8 @@
 				"name" : "blueNight-1-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1469,8 +1458,8 @@
 				"name" : "blueNight-1-1-1-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1494,8 +1483,8 @@
 				"name" : "blueNight-1-1-1-1-1-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1531,8 +1520,8 @@
 				"name" : "blueNight-1-1-1-1-1-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1592,8 +1581,8 @@
 				"name" : "blueNight-1-1-1-4",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1629,8 +1618,8 @@
 				"name" : "blueNight-1-1-1-5",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1666,8 +1655,8 @@
 				"name" : "blueNight-1-1-3-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1691,8 +1680,8 @@
 				"name" : "blueNight-1-1-3-1-1-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1704,8 +1693,8 @@
 				"name" : "blueNight-1-1-3-1-1-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1729,8 +1718,8 @@
 				"name" : "blueNight-1-1-3-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1742,8 +1731,8 @@
 				"name" : "blueNight-1-1-3-3",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1755,8 +1744,8 @@
 				"name" : "blueNight-1-1-4",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1780,8 +1769,8 @@
 				"name" : "blueNight-1-1-5-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1793,8 +1782,8 @@
 				"name" : "blueNight-1-1-5-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1818,8 +1807,8 @@
 				"name" : "blueNight-1-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1843,8 +1832,8 @@
 				"name" : "blueNight-1-2-1-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1868,8 +1857,8 @@
 				"name" : "blueNight-1-2-1-1-1-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1881,8 +1870,8 @@
 				"name" : "blueNight-1-2-1-1-1-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1906,8 +1895,8 @@
 				"name" : "blueNight-1-2-1-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1919,8 +1908,8 @@
 				"name" : "blueNight-1-2-1-3",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1932,8 +1921,8 @@
 				"name" : "blueNight-1-2-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1945,8 +1934,8 @@
 				"name" : "blueNight-1-2-3",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1970,8 +1959,8 @@
 				"name" : "blueNight-1-2-4-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -1983,8 +1972,8 @@
 				"name" : "blueNight-1-2-4-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2008,8 +1997,8 @@
 				"name" : "blueNight-1-3",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2033,8 +2022,8 @@
 				"name" : "blueNight-1-3-1-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2070,8 +2059,8 @@
 				"name" : "blueNight-1-3-1-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2119,8 +2108,8 @@
 				"name" : "blueNight-1-5",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2156,8 +2145,8 @@
 				"name" : "blueNight-1-6",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2181,8 +2170,8 @@
 				"name" : "blueNight-2-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2206,8 +2195,8 @@
 				"name" : "blueNight-2-1-1-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2243,8 +2232,8 @@
 				"name" : "blueNight-2-1-1-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2304,8 +2293,8 @@
 				"name" : "blueNight-2-4",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2341,8 +2330,8 @@
 				"name" : "blueNight-2-5",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2378,8 +2367,8 @@
 				"name" : "blueNight-4-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2403,8 +2392,8 @@
 				"name" : "blueNight-4-1-1-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2416,8 +2405,8 @@
 				"name" : "blueNight-4-1-1-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2441,8 +2430,8 @@
 				"name" : "blueNight-4-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2454,8 +2443,8 @@
 				"name" : "blueNight-4-3",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2467,8 +2456,8 @@
 				"name" : "blueNight-5",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2492,8 +2481,8 @@
 				"name" : "blueNight-6-1",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2505,8 +2494,8 @@
 				"name" : "blueNight-6-2",
 				"default" : 				{
 					"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor" : [ 0.821246, 1.0, 0.904952, 1.0 ],
+					"textcolor_inverse" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"patchlinecolor" : [ 0.317647, 0.654902, 0.976471, 0.9 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ]
 				}
@@ -2529,12 +2518,13 @@
 , 			{
 				"name" : "solarized?",
 				"default" : 				{
-					"editing_bgcolor" : [ 0.04340959712863, 0.172110125422478, 0.21745640039444, 1.0 ],
-					"fontname" : [ "Arial" ],
 					"accentcolor" : [ 0.079000525176525, 0.389900922775269, 0.349255114793777, 1.0 ],
-					"locked_bgcolor" : [ 0.046158168464899, 0.128987193107605, 0.161438345909119, 1.0 ],
-					"textcolor_inverse" : [ 0.995808362960815, 0.800102710723877, 0.399984955787659, 1.0 ],
 					"textcolor" : [ 0.800000071525574, 0.800000071525574, 0.799999952316284, 1.0 ],
+					"locked_bgcolor" : [ 0.046158168464899, 0.128987193107605, 0.161438345909119, 1.0 ],
+					"editing_bgcolor" : [ 0.04340959712863, 0.172110125422478, 0.21745640039444, 1.0 ],
+					"textcolor_inverse" : [ 0.995808362960815, 0.800102710723877, 0.399984955787659, 1.0 ],
+					"fontname" : [ "Arial" ],
+					"color" : [ 0.815686274509804, 0.827450980392157, 0.188235294117647, 1.0 ],
 					"patchlinecolor" : [ 0.999996185302734, 0.99993908405304, 0.041033305227757, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -2546,8 +2536,16 @@
 						"autogradient" : 0.0
 					}
 ,
-					"bgcolor" : [ 0.054901960784314, 0.247058823529412, 0.447058823529412, 1.0 ],
-					"color" : [ 0.815686274509804, 0.827450980392157, 0.188235294117647, 1.0 ]
+					"bgcolor" : [ 0.054901960784314, 0.247058823529412, 0.447058823529412, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "tap",
+				"default" : 				{
+					"fontname" : [ "Lato Light" ]
 				}
 ,
 				"parentstyle" : "",
