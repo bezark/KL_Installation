@@ -1,0 +1,15 @@
+{
+  "name": "zinemakin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "giffify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jBez",
+  "license": "ISC",
+  "dependencies": {
+    "get-pixels": "^3.3.2",
+    "gif-encoder": "^0.7.2"
+  }
+}
