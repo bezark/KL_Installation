@@ -69,18 +69,20 @@ Max.addHandler("say", (string) => {
 
     if (tempFreeVoice) {
 
-        say.export(strClean, "Alex", 1.2, audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav", (err) => {
+        // say.export(strClean, "Alex", 1.2, audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav", (err) => {
 
-            if (err != null) {
-                console.error(err);
-            } else {
-                // Max.post("file written to " + audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav");
+        //     if (err != null) {
+        //         console.error(err);
+        //     } else {
+        //         // Max.post("file written to " + audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav");
 
-                Max.outlet([parseInt(tempFreeVoice), audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav"]);
+        //         Max.outlet([parseInt(tempFreeVoice), audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav"]);
 
-                voiceBankIndex = addMod(voiceBankIndex, numVoices);
-                // console.log(tempFreeVoice);
-            }
+        //         voiceBankIndex = addMod(voiceBankIndex, numVoices);
+        //         // console.log(tempFreeVoice);
+        //     }
+
+        //THIS IS WHERE IT GOESSSSS!!!!
 
         });
     } else {
