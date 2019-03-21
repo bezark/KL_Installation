@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1183.0, 292.0, 565.0, 506.0 ],
+		"rect" : [ 584.0, 262.0, 775.0, 521.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"showontab" : 1,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 15.0, 66.0, 97.0, 22.0 ],
+					"text" : "udpreceive 6666"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
@@ -716,6 +728,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-26", 1 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-11", 0 ]
 				}
@@ -958,13 +977,13 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7::obj-29" : [ "amxd~", "amxd~", 0 ],
-			"obj-7::obj-31" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
-			"obj-5::obj-13" : [ "amxd~[1]", "amxd~", 0 ],
 			"obj-8::obj-13" : [ "amxd~[2]", "amxd~", 0 ],
-			"obj-7::obj-2" : [ "amxd~[3]", "amxd~[1]", 0 ],
 			"obj-7::obj-18" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-7::obj-2" : [ "amxd~[3]", "amxd~[1]", 0 ],
+			"obj-7::obj-31" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
 			"obj-7::obj-11" : [ "amxd~[4]", "amxd~[2]", 0 ],
+			"obj-5::obj-13" : [ "amxd~[1]", "amxd~", 0 ],
+			"obj-7::obj-29" : [ "amxd~", "amxd~", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -973,7 +992,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "audio.js",
-				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -998,7 +1017,7 @@
 			}
 , 			{
 				"name" : "voiceBoi.maxpat",
-				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1006,13 +1025,27 @@
 , 			{
 				"name" : "Poly Vocoder.amxd.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Poly Vocoder.amxd[1].maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Poly Vocoder.amxd[2].maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio-synth.maxpat",
-				"bootpath" : "~/Documents/GitHub/KL_Installation",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1020,8 +1053,15 @@
 , 			{
 				"name" : "ChamberVerb.amxd.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
 				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "waves_kl_2019.wav",
+				"bootpath" : "~/BitTorrent Sync/Chris/Projects/DifferenceEngine/Knowledge Lost Installation Jan 2018/KL_Installation/assets-audio",
+				"patcherrelativepath" : "./assets-audio",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
  ],
