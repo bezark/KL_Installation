@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 754.0, 517.0, 652.0, 349.0 ],
+		"rect" : [ 49.0, 504.0, 299.0, 107.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -186,7 +186,7 @@
 					"autopopulate" : 1,
 					"depth" : 1,
 					"id" : "obj-14",
-					"items" : [ "poem0.jpg", ",", "poem1.jpg", ",", "poem10.jpg", ",", "poem11.jpg", ",", "poem2.jpg", ",", "poem3.jpg", ",", "poem4.jpg", ",", "poem5.jpg", ",", "poem6.jpg", ",", "poem7.jpg", ",", "poem8.jpg", ",", "poem9.jpg" ],
+					"items" : [ "poem0.jpg", ",", "poem1.jpg", ",", "poem10.jpg", ",", "poem100.jpg", ",", "poem101.jpg", ",", "poem102.jpg", ",", "poem103.jpg", ",", "poem104.jpg", ",", "poem105.jpg", ",", "poem106.jpg", ",", "poem107.jpg", ",", "poem108.jpg", ",", "poem109.jpg", ",", "poem11.jpg", ",", "poem110.jpg", ",", "poem111.jpg", ",", "poem112.jpg", ",", "poem113.jpg", ",", "poem114.jpg", ",", "poem115.jpg", ",", "poem116.jpg", ",", "poem117.jpg", ",", "poem118.jpg", ",", "poem119.jpg", ",", "poem12.jpg", ",", "poem120.jpg", ",", "poem121.jpg", ",", "poem122.jpg", ",", "poem123.jpg", ",", "poem124.jpg", ",", "poem125.jpg", ",", "poem126.jpg", ",", "poem127.jpg", ",", "poem128.jpg", ",", "poem129.jpg", ",", "poem13.jpg", ",", "poem130.jpg", ",", "poem131.jpg", ",", "poem132.jpg", ",", "poem133.jpg", ",", "poem134.jpg", ",", "poem135.jpg", ",", "poem136.jpg", ",", "poem137.jpg", ",", "poem138.jpg", ",", "poem139.jpg", ",", "poem14.jpg", ",", "poem140.jpg", ",", "poem141.jpg", ",", "poem142.jpg", ",", "poem143.jpg", ",", "poem144.jpg", ",", "poem146.jpg", ",", "poem147.jpg", ",", "poem149.jpg", ",", "poem15.jpg", ",", "poem150.jpg", ",", "poem151.jpg", ",", "poem16.jpg", ",", "poem17.jpg", ",", "poem18.jpg", ",", "poem19.jpg", ",", "poem2.jpg", ",", "poem20.jpg", ",", "poem21.jpg", ",", "poem22.jpg", ",", "poem23.jpg", ",", "poem24.jpg", ",", "poem25.jpg", ",", "poem26.jpg", ",", "poem27.jpg", ",", "poem28.jpg", ",", "poem29.jpg", ",", "poem3.jpg", ",", "poem30.jpg", ",", "poem31.jpg", ",", "poem32.jpg", ",", "poem33.jpg", ",", "poem34.jpg", ",", "poem35.jpg", ",", "poem36.jpg", ",", "poem37.jpg", ",", "poem38.jpg", ",", "poem39.jpg", ",", "poem4.jpg", ",", "poem40.jpg", ",", "poem41.jpg", ",", "poem42.jpg", ",", "poem43.jpg", ",", "poem44.jpg", ",", "poem45.jpg", ",", "poem46.jpg", ",", "poem47.jpg", ",", "poem48.jpg", ",", "poem49.jpg", ",", "poem5.jpg", ",", "poem50.jpg", ",", "poem51.jpg", ",", "poem52.jpg", ",", "poem53.jpg", ",", "poem54.jpg", ",", "poem55.jpg", ",", "poem56.jpg", ",", "poem57.jpg", ",", "poem58.jpg", ",", "poem59.jpg", ",", "poem6.jpg", ",", "poem60.jpg", ",", "poem61.jpg", ",", "poem62.jpg", ",", "poem63.jpg", ",", "poem64.jpg", ",", "poem65.jpg", ",", "poem66.jpg", ",", "poem67.jpg", ",", "poem68.jpg", ",", "poem69.jpg", ",", "poem7.jpg", ",", "poem70.jpg", ",", "poem71.jpg", ",", "poem72.jpg", ",", "poem73.jpg", ",", "poem74.jpg", ",", "poem75.jpg", ",", "poem76.jpg", ",", "poem77.jpg", ",", "poem78.jpg", ",", "poem79.jpg", ",", "poem8.jpg", ",", "poem80.jpg", ",", "poem81.jpg", ",", "poem82.jpg", ",", "poem83.jpg", ",", "poem84.jpg", ",", "poem85.jpg", ",", "poem86.jpg", ",", "poem87.jpg", ",", "poem88.jpg", ",", "poem89.jpg", ",", "poem9.jpg", ",", "poem90.jpg", ",", "poem91.jpg", ",", "poem92.jpg", ",", "poem93.jpg", ",", "poem94.jpg", ",", "poem95.jpg", ",", "poem96.jpg", ",", "poem97.jpg", ",", "poem98.jpg", ",", "poem99.jpg" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
