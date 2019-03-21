@@ -88,176 +88,6 @@
 			}
 , 			{
 				"box" : 				{
-					"autosave" : 1,
-					"bgmode" : 1,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-13",
-					"lockeddragscroll" : 0,
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 4,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 442.0, 100.09405517578125, 418.0, 196.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_invisible" : 1,
-							"parameter_longname" : "amxd~",
-							"parameter_shortname" : "amxd~",
-							"parameter_type" : 3
-						}
-
-					}
-,
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 1,
-						"patchername" : "Poly Vocoder.amxd",
-						"patchername_fallback" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Poly Vocoder.amxd"
-					}
-,
-					"snapshot" : 					{
-						"filetype" : "C74Snapshot",
-						"version" : 2,
-						"minorversion" : 0,
-						"name" : "snapshotlist",
-						"origin" : "max~",
-						"type" : "list",
-						"subtype" : "Undefined",
-						"embed" : 1,
-						"snapshot" : 						{
-							"name" : "Poly Vocoder.amxd",
-							"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Poly Vocoder.amxd",
-							"valuedictionary" : 							{
-								"parameter_values" : 								{
-									"Bus" : 0.0,
-									"Midi" : 0.0,
-									"AmbienceThreshold" : 0.0,
-									"Atten" : 0.0,
-									"CorrectionAmount" : 0.0,
-									"CorrectionThreshold" : 0.0,
-									"Dry/Wet" : 0.0,
-									"Fade" : 0.0,
-									"Gain" : 0.0,
-									"Latency" : 0.0,
-									"PreGain" : 0.0,
-									"Quality" : 0.0,
-									"Shift" : 0.0,
-									"SibilanceThreshold" : 0.0,
-									"Spread" : 0.0,
-									"Pattern" : 0.0,
-									"blob" : 									{
-										"Chord" : [ 57, 1, 60, 1, 64, 1, 67, 1 ],
-										"Storage" : [ 											{
-												"pattrstorage" : 												{
-													"name" : "u953001153",
-													"slots" : 													{
-														"2" : 														{
-															"id" : 2,
-															"data" : 															{
-																"Chord" : [ 57, 18, 60, 18, 64, 18, 67, 22 ]
-															}
-
-														}
-
-													}
-
-												}
-
-											}
- ]
-									}
-
-								}
-
-							}
-
-						}
-,
-						"snapshotlist" : 						{
-							"current_snapshot" : 0,
-							"entries" : [ 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "Poly Vocoder.amxd",
-									"origin" : "Poly Vocoder.amxd",
-									"type" : "amxd",
-									"subtype" : "Undefined",
-									"embed" : 0,
-									"snapshot" : 									{
-										"name" : "Poly Vocoder.amxd",
-										"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Poly Vocoder.amxd",
-										"valuedictionary" : 										{
-											"parameter_values" : 											{
-												"Bus" : 0.0,
-												"Midi" : 0.0,
-												"AmbienceThreshold" : 0.0,
-												"Atten" : 0.0,
-												"CorrectionAmount" : 0.0,
-												"CorrectionThreshold" : 0.0,
-												"Dry/Wet" : 0.0,
-												"Fade" : 0.0,
-												"Gain" : 0.0,
-												"Latency" : 0.0,
-												"PreGain" : 0.0,
-												"Quality" : 0.0,
-												"Shift" : 0.0,
-												"SibilanceThreshold" : 0.0,
-												"Spread" : 0.0,
-												"Pattern" : 0.0,
-												"blob" : 												{
-													"Chord" : [ 57, 1, 60, 1, 64, 1, 67, 1 ],
-													"Storage" : [ 														{
-															"pattrstorage" : 															{
-																"name" : "u953001153",
-																"slots" : 																{
-																	"2" : 																	{
-																		"id" : 2,
-																		"data" : 																		{
-																			"Chord" : [ 57, 18, 60, 18, 64, 18, 67, 22 ]
-																		}
-
-																	}
-
-																}
-
-															}
-
-														}
- ]
-												}
-
-											}
-
-										}
-
-									}
-,
-									"fileref" : 									{
-										"name" : "Poly Vocoder.amxd",
-										"filename" : "Poly Vocoder.amxd.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "f2e8f1e612af5dda67f3ba7effbbac7e"
-									}
-
-								}
- ]
-						}
-
-					}
-,
-					"text" : "amxd~ \"Poly Vocoder.amxd\"",
-					"varname" : "amxd~",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -377,20 +207,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-13", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
@@ -426,36 +242,36 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 171.5, 412.0, 311.5, 412.0, 311.5, 89.09405517578125, 451.5, 89.09405517578125 ],
+					"destination" : [ "obj-35", 0 ],
+					"source" : [ "obj-9", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"source" : [ "obj-9", 1 ]
+					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
 		"parameters" : 		{
-			"obj-13" : [ "amxd~", "amxd~", 0 ],
 			"parameterbanks" : 			{
 
 			}
 
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "Poly Vocoder.amxd.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
