@@ -1,11 +1,10 @@
 /*jshint esversion: 6 */
 
 //---------------------------------------------------------------------LIB-CONST
-const async = require("async");
 const say = require("say");
 const path = require('path');
-const fs = require("fs");
-const Max = require('max-api');
+// // const fs = require("fs");
+// const Max = require('max-api');
 //----------------------------------------------------------------------MY-CONST
 
 const audioFolder = __dirname + "/audio";
@@ -23,91 +22,81 @@ for (let i = 0; i < voiceBankIsFree.length; i++) {
 }
 
 //------------------------------------------------------------------STARTUP-INFO
-Max.post("Audio Process");
-Max.post(audioFolder);
-Max.post(path.isAbsolute(audioFolder));
+console.log("Audio Process");
+console.log(audioFolder);
+console.log(path.isAbsolute(audioFolder));
 //------------------------------------------------------------------MAX-HANDLERS
-Max.addHandler("init", (string) => {
 
-    voiceBankName = string;
 
-    Max.post("filenames will now use: " + voiceBankName);
-
+process.on('message', (msg) => {
+    console.log("child says: " + msg);
 });
 
-Max.addHandler("reset", () => {
+// Max.addHand ler("say", (string) => {
 
-    for (let i = 0; i < voiceBankIsFree.length; i++) {
-        voiceBankIsFree[i] = true;
-    }
-});
+//     let strClean = string.replace(/[^\w\s]/gi, '');
 
+//     if (strClean.length > 120) {
+//         strClean = strClean.substring(0, 120);
+//     }
 
-Max.addHandler("say", (string) => {
-
-    let strClean = string.replace(/[^\w\s]/gi, '');
-
-    if (strClean.length > 120) {
-        strClean = strClean.substring(0, 120);
-    }
-
-    if (!strClean.replace(/\s/g, '').length) {
-        console.log('string only contains whitespace (ie. spaces, tabs or line breaks)');
-        strClean = "ummmmmm";
+//     if (!strClean.replace(/\s/g, '').length) {
+//         console.log('string only contains whitespace (ie. spaces, tabs or line breaks)');
+//         strClean = "ummmmmm";
 
 
-    } else if (strClean == "") {
-        console.log("string was ''");
+//     } else if (strClean == "") {
+//         console.log("string was ''");
 
-        strClean = "ummmmmm";
+//         strClean = "ummmmmm";
 
-    }
+//     }
 
-    let tempFreeVoice = findFreeVoice();
+//     let tempFreeVoice = findFreeVoice();
 
-    Max.post(tempFreeVoice);
+//     console.log(tempFreeVoice);
 
-    if (tempFreeVoice) {
+//     if (tempFreeVoice) {
 
-        // say.export(strClean, "Alex", 1.2, audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav", (err) => {
+//         say.export(strClean, "Alex", 1.2, audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav", (err) => {
 
-        //     if (err != null) {
-        //         console.error(err);
-        //     } else {
-        //         // Max.post("file written to " + audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav");
+//             if (err != null) {
+//                 console.error(err);
+//             } else {
+//                 // console.log("file written to " + audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav");
 
-        //         Max.outlet([parseInt(tempFreeVoice), audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav"]);
+//                 Max.outlet([parseInt(tempFreeVoice), audioFolder + "/" + voiceBankName + "_" + tempFreeVoice + ".wav"]);
 
-        //         voiceBankIndex = addMod(voiceBankIndex, numVoices);
-        //         // console.log(tempFreeVoice);
-        //     }
+//                 voiceBankIndex = addMod(voiceBankIndex, numVoices);
+//                 // console.log(tempFreeVoice);
+//             }
 
-        //THIS IS WHERE IT GOESSSSS!!!!
+//         //THIS IS WHERE IT GOESSSSS!!!!
 
-        });
-    } else {
+//         });
+//     } else {
 
-        Max.post("All voices filled");
+//         console.log("All voices filled");
 
-    }
+//     }
 
 
 
 
 
-});
+// });
 
-Max.addHandler("state", (num) => {
+// Max.addHandler("state", (num) => {
 
-    let tempNum = parseInt(num);
+//     let tempNum = parseInt(num);
 
-    setTimeout(() => {
-        voiceBankIsFree[tempNum] = true;
-    }, 4000);
+//     setTimeout(() => {
+//         voiceBankIsFree[tempNum] = true;
+//     }, 4000);
 
 
 
-});
+// });
 
 
 //---------------------------------------------------------------------FUNCITONS
